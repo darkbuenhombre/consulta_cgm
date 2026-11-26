@@ -5,13 +5,13 @@ import { input, mensajeError } from "../../estilos"
 const ESTADOS = ["pendiente", "confirmada", "cancelada", "completada"]
 
 const COLORES_ESTADO = {
-  pendiente: "#b26a00",
-  confirmada: "#2C5F4A",
-  cancelada: "#a12622",
-  completada: "#555"
+  pendiente: "var(--aviso)",
+  confirmada: "var(--azul-700)",
+  cancelada: "var(--error)",
+  completada: "var(--texto-suave)"
 }
 
-const celda = { padding: "8px", borderBottom: "1px solid #ddd", textAlign: "left", verticalAlign: "top" }
+const celda = { padding: "var(--esp-3) var(--esp-2)", borderBottom: "1px solid var(--borde)", textAlign: "left", verticalAlign: "top" }
 
 function AdminReservas() {
   const [filtros, setFiltros] = useState({ desde: aTextoFecha(new Date()), hasta: "", estado: "" })

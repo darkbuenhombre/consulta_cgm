@@ -3,7 +3,7 @@ import { Link, Navigate, useNavigate } from "react-router-dom"
 import { api, cerrarSesion, fechaChilena, obtenerToken } from "../api"
 import FormMaterial from "../components/admin/FormMaterial"
 import Header from "../components/Header"
-import { botonChico, botonSecundario, contenedor, input, mensajeError, VERDE } from "../estilos"
+import { AZUL, botonChico, botonPeligro, botonSecundario, contenedor, input, mensajeError, tarjeta, textoSuave } from "../estilos"
 
 const ESTADOS = { "": "Todos", low: "Stock bajo", out: "Agotado", expiring: "Por vencer (30 días)" }
 
@@ -12,8 +12,9 @@ const COLUMNAS = [
   ["minimum_threshold", "Mínimo"], ["unit", "Unidad"], ["expiry_date", "Vence"], ["supplier", "Proveedor"]
 ]
 
-const ROJO = "#fdecea"
-const AMARILLO = "#fff6d6"
+// Hex en vez de var(): los tests comparan estos colores.
+const ROJO = "#FEF2F2"
+const AMARILLO = "#FFFBEB"
 
 function BannerAlertas({ alertas }) {
   if (!alertas || (alertas.lowStock.length === 0 && alertas.expiringSoon.length === 0)) return null
@@ -35,6 +36,41 @@ function BannerAlertas({ alertas }) {
   )
 }
 
+// Recuadro para ajustar el stock: se fija la cantidad nueva y se envía la diferencia como ajuste.
+function AjusteStock({ material, onGuardar, onCancelar }) {
+  const [cantidad, setCantidad] = useState(material.quantity_on_hand)
+  const [motivo, setMotivo] = useState("")
+  const [guardando, setGuardando] = useState(false)
+  const delta = cantidad - material.quantity_on_hand
+
+  async function enviar(e) {
+    e.preventDefault()
+    setGuardando(true)
+    await onGuardar(material, delta, motivo)
+    setGuardando(false)
+  }
+
+  return (
+    <form onSubmit={enviar} style={{ ...tarjeta, marginBottom: "12px" }} aria-label="Ajustar stock">
+      <h3 style={{ marginTop: 0 }}>Ajustar stock: {material.name}</h3>
+      <p style={{ margin: "0 0 8px" }}>Stock actual: {material.quantity_on_hand} {material.unit}</p>
+      <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px" }}>
+        <button type="button" onClick={() => setCantidad(c => Math.max(0, c - 1))} disabled={cantidad <= 0}
+          style={botonSecundario} aria-label="Reducir stock">−</button>
+        <input type="number" min="0" step="1" value={cantidad} aria-label="Nuevo stock"
+          onChange={e => setCantidad(e.target.value === "" ? 0 : Math.max(0, Math.trunc(Number(e.target.value))))}
+          style={{ ...input, width: "90px" }} />
+        <button type="button" onClick={() => setCantidad(c => c + 1)} style={botonSecundario} aria-label="Aumentar stock">+</button>
+        <span style={textoSuave}>Cambio: {delta > 0 ? `+${delta}` : delta}</span>
+      </div>
+      <input placeholder="Motivo del ajuste (obligatorio)" value={motivo} onChange={e => setMotivo(e.target.value)}
+        required maxLength={200} aria-label="Motivo del ajuste" style={{ ...input, width: "100%", margin: "var(--esp-3) 0" }} />
+      <button type="submit" disabled={guardando || delta === 0 || !motivo.trim()} style={botonChico}>Guardar ajuste</button>{" "}
+      <button type="button" onClick={onCancelar} style={botonSecundario}>Cancelar</button>
+    </form>
+  )
+}
+
 function AdminInventario() {
   const navigate = useNavigate()
   const [materiales, setMateriales] = useState([])
@@ -47,6 +83,7 @@ function AdminInventario() {
   const [orden, setOrden] = useState({ columna: "name", asc: true })
   const [editando, setEditando] = useState(undefined) // undefined: cerrado, null: nuevo, objeto: editar
   const [categorias, setCategorias] = useState([])
+  const [ajustando, setAjustando] = useState(null) // material cuyo stock se está ajustando
 
   const manejarError = useCallback(e => {
     if (e.status === 403) setProhibido(true)
@@ -122,14 +159,11 @@ function AdminInventario() {
     }
   }
 
-  async function ajustar(material) {
-    const texto = window.prompt(`Ajuste de stock para "${material.name}" (actual: ${material.quantity_on_hand}).\nCantidad a sumar (use negativo para restar, ej: -2):`)
-    if (texto === null) return
-    const reason = window.prompt("Motivo del ajuste (obligatorio):")
-    if (reason === null) return
+  async function ajustar(material, delta, reason) {
     setError("")
     try {
-      await api(`/admin/materials/${material.id}/adjust`, { method: "POST", body: { delta: texto.trim(), reason }, admin: true })
+      await api(`/admin/materials/${material.id}/adjust`, { method: "POST", body: { delta, reason }, admin: true })
+      setAjustando(null)
       await cargar()
     } catch (e) {
       manejarError(e)
@@ -142,12 +176,12 @@ function AdminInventario() {
 
   return (
     <div style={{ ...contenedor, maxWidth: "1200px" }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "var(--esp-3)", flexWrap: "wrap" }}>
         <Header />
         <button onClick={salir} style={botonSecundario}>Cerrar sesión</button>
       </div>
-      <p><Link to="/admin" style={{ color: VERDE }}>← Volver al panel</Link></p>
-      <h2 style={{ color: VERDE }}>Inventario de materiales</h2>
+      <p style={{ marginTop: "var(--esp-5)" }}><Link to="/admin" style={{ fontSize: "var(--texto-sm)" }}>← Volver al panel</Link></p>
+      <h2 style={{ marginTop: "var(--esp-2)" }}>Inventario de materiales</h2>
 
       {prohibido ? (
         <div style={mensajeError}>Acceso denegado: esta sección es solo para el administrador.</div>
@@ -175,6 +209,10 @@ function AdminInventario() {
               onGuardar={guardar} onCancelar={() => setEditando(undefined)} />
           )}
 
+          {ajustando && (
+            <AjusteStock key={ajustando.id} material={ajustando} onGuardar={ajustar} onCancelar={() => setAjustando(null)} />
+          )}
+
           {error && <div style={{ ...mensajeError, marginBottom: "12px" }}>{error}</div>}
 
           {cargando && materiales.length === 0 ? (
@@ -183,40 +221,40 @@ function AdminInventario() {
             <p>No hay materiales que coincidan.</p>
           ) : (
             <div style={{ overflowX: "auto" }}>
-              <p style={{ fontSize: "13px", color: "#555" }}>
-                <span style={{ background: ROJO, padding: "2px 6px" }}>Rojo</span>: en o bajo el mínimo ·{" "}
-                <span style={{ background: AMARILLO, padding: "2px 6px" }}>Amarillo</span>: vence en 30 días o menos
+              <p style={{ ...textoSuave, fontSize: "var(--texto-xs)" }}>
+                <span style={{ background: ROJO, padding: "2px 8px", borderRadius: "4px", color: "var(--error)" }}>Rojo</span>: en o bajo el mínimo ·{" "}
+                <span style={{ background: AMARILLO, padding: "2px 8px", borderRadius: "4px", color: "var(--aviso)" }}>Amarillo</span>: vence en 30 días o menos
               </p>
               <table style={{ borderCollapse: "collapse", width: "100%", fontSize: "14px" }}>
                 <thead>
-                  <tr style={{ textAlign: "left", borderBottom: `2px solid ${VERDE}` }}>
+                  <tr style={{ textAlign: "left", borderBottom: "1px solid var(--borde)" }}>
                     {COLUMNAS.map(([clave, titulo]) => (
-                      <th key={clave} style={{ padding: "6px" }}>
+                      <th key={clave} style={{ padding: "10px 8px" }}>
                         <button onClick={() => ordenarPor(clave)}
-                          style={{ background: "none", border: "none", cursor: "pointer", fontWeight: "bold", padding: 0 }}>
+                          style={{ background: "none", border: "none", cursor: "pointer", font: "inherit", color: orden.columna === clave ? AZUL : "inherit", textTransform: "inherit", letterSpacing: "inherit", padding: 0 }}>
                           {titulo}{orden.columna === clave ? (orden.asc ? " ▲" : " ▼") : ""}
                         </button>
                       </th>
                     ))}
-                    <th style={{ padding: "6px" }}>Acciones</th>
+                    <th style={{ padding: "10px 8px" }}>Acciones</th>
                   </tr>
                 </thead>
                 <tbody>
                   {ordenados.map(m => (
                     <tr key={m.id} data-testid={`material-${m.id}`}
-                      style={{ borderBottom: "1px solid #ddd", backgroundColor: m.low_stock ? ROJO : m.expiring_soon ? AMARILLO : undefined }}>
-                      <td style={{ padding: "6px" }}>{m.name}</td>
-                      <td style={{ padding: "6px" }}>{m.category}</td>
-                      <td style={{ padding: "6px" }}>{m.sku}</td>
-                      <td style={{ padding: "6px", fontWeight: m.low_stock ? "bold" : undefined }}>{m.quantity_on_hand}</td>
-                      <td style={{ padding: "6px" }}>{m.minimum_threshold}</td>
-                      <td style={{ padding: "6px" }}>{m.unit}</td>
-                      <td style={{ padding: "6px" }}>{m.expiry_date ? fechaChilena(m.expiry_date) : "—"}</td>
-                      <td style={{ padding: "6px" }}>{m.supplier}</td>
-                      <td style={{ padding: "6px", whiteSpace: "nowrap" }}>
-                        <button onClick={() => ajustar(m)} style={botonChico}>Ajustar stock</button>{" "}
+                      style={{ borderBottom: "1px solid var(--borde)", backgroundColor: m.low_stock ? ROJO : m.expiring_soon ? AMARILLO : undefined }}>
+                      <td style={{ padding: "10px 8px" }}>{m.name}</td>
+                      <td style={{ padding: "10px 8px" }}>{m.category}</td>
+                      <td style={{ padding: "10px 8px" }}>{m.sku}</td>
+                      <td style={{ padding: "10px 8px", fontWeight: m.low_stock ? "bold" : undefined }}>{m.quantity_on_hand}</td>
+                      <td style={{ padding: "10px 8px" }}>{m.minimum_threshold}</td>
+                      <td style={{ padding: "10px 8px" }}>{m.unit}</td>
+                      <td style={{ padding: "10px 8px" }}>{m.expiry_date ? fechaChilena(m.expiry_date) : "—"}</td>
+                      <td style={{ padding: "10px 8px" }}>{m.supplier}</td>
+                      <td style={{ padding: "10px 8px", whiteSpace: "nowrap" }}>
+                        <button onClick={() => setAjustando(m)} style={botonChico}>Ajustar stock</button>{" "}
                         <button onClick={() => setEditando(m)} style={botonSecundario}>Editar</button>{" "}
-                        <button onClick={() => eliminar(m)} style={{ ...botonSecundario, color: "#a12622", borderColor: "#a12622" }}>Eliminar</button>
+                        <button onClick={() => eliminar(m)} style={botonPeligro}>Eliminar</button>
                       </td>
                     </tr>
                   ))}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { api, fechaChilena } from "../../api"
-import { botonChico, botonSecundario, input, mensajeError } from "../../estilos"
+import { botonChico, botonSecundario, input, mensajeError, mensajeExito, textoSuave } from "../../estilos"
 
 const DIAS = { 1: "Lunes", 2: "Martes", 3: "Miércoles", 4: "Jueves", 5: "Viernes", 6: "Sábado" }
 
@@ -39,12 +39,12 @@ function HorarioSemanal() {
   return (
     <section>
       <h3>Horario de atención</h3>
-      <p style={{ color: "#555" }}>
+      <p style={textoSuave}>
         Cada tramo se divide en bloques. Por ejemplo, de 09:00 a 12:30 cada 30 minutos genera
         bloques desde las 09:00 hasta las 12:00. Las reservas ya hechas no se modifican.
       </p>
       {error && <div style={mensajeError}>{error}</div>}
-      {aviso && <p style={{ color: "#2C5F4A" }}>{aviso}</p>}
+      {aviso && <p role="status" style={mensajeExito}>{aviso}</p>}
       <table style={{ borderCollapse: "separate", borderSpacing: "6px" }}>
         <thead>
           <tr style={{ textAlign: "left" }}><th>Día</th><th>Desde</th><th>Hasta</th><th>Bloques (min)</th><th></th></tr>
@@ -107,7 +107,7 @@ function DiasBloqueados() {
   return (
     <section style={{ marginTop: "32px" }}>
       <h3>Días sin atención</h3>
-      <p style={{ color: "#555" }}>Feriados, vacaciones u otros días en que no se puede reservar.</p>
+      <p style={textoSuave}>Feriados, vacaciones u otros días en que no se puede reservar.</p>
       {error && <div style={mensajeError}>{error}</div>}
       <form onSubmit={agregar} style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
         <input type="date" required value={nuevo.fecha} onChange={e => setNuevo({ ...nuevo, fecha: e.target.value })} style={input} />

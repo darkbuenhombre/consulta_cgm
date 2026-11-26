@@ -1,5 +1,14 @@
 import { useState } from "react"
 
+const CAMPOS = [
+  ["nombre", "text", "Nombre", "Nombre"],
+  ["apellido_paterno", "text", "Apellido Paterno", "Apellido paterno"],
+  ["apellido_materno", "text", "Apellido Materno", "Apellido materno"],
+  ["rut", "text", "10.333.222-k", "RUT"],
+  ["telefono", "tel", "Teléfono", "Teléfono"],
+  ["email", "email", "Correo electrónico", "Correo electrónico"]
+]
+
 function DatosPaciente({ onCambio }) {
   const [datos, setDatos] = useState({
     nombre: "", apellido_paterno: "",
@@ -16,18 +25,13 @@ function DatosPaciente({ onCambio }) {
   return (
     <div>
       <h2>Datos del Paciente</h2>
-      <input type="text" name="nombre" placeholder="Nombre"
-        value={datos.nombre} onChange={manejoCambios} />
-      <input type="text" name="apellido_paterno" placeholder="Apellido Paterno"
-        value={datos.apellido_paterno} onChange={manejoCambios} />
-      <input type="text" name="apellido_materno" placeholder="Apellido Materno"
-        value={datos.apellido_materno} onChange={manejoCambios} />
-      <input type="text" name="rut" placeholder="10.333.222-k"
-        value={datos.rut} onChange={manejoCambios} maxLength={12} />
-      <input type="tel" name="telefono" placeholder="Teléfono"
-        value={datos.telefono} onChange={manejoCambios} />
-      <input type="email" name="email" placeholder="Correo electrónico"
-        value={datos.email} onChange={manejoCambios} />
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "var(--esp-3)" }}>
+        {CAMPOS.map(([nombre, tipo, placeholder, etiqueta]) => (
+          <input key={nombre} type={tipo} name={nombre} placeholder={placeholder} aria-label={etiqueta}
+            value={datos[nombre]} onChange={manejoCambios} maxLength={nombre === "rut" ? 12 : undefined}
+            style={{ width: "100%" }} />
+        ))}
+      </div>
     </div>
   )
 }

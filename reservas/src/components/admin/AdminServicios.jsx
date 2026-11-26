@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { api } from "../../api"
-import { botonChico, input, mensajeError } from "../../estilos"
+import { botonChico, input, mensajeError, mensajeExito, textoSuave } from "../../estilos"
 
 const NUEVO = { codigo: "", nombre: "", duracion_min: 30, precio: "", activo: true }
 
@@ -64,12 +64,12 @@ function AdminServicios() {
 
   return (
     <div>
-      <p style={{ color: "#555" }}>
+      <p style={textoSuave}>
         Los servicios desactivados no aparecen en el formulario de reserva. El código es un identificador
         interno (solo minúsculas, sin espacios). La duración es informativa: cada reserva ocupa un bloque del horario.
       </p>
       {error && <div style={mensajeError}>{error}</div>}
-      {aviso && <p style={{ color: "#2C5F4A" }}>{aviso}</p>}
+      {aviso && <p role="status" style={mensajeExito}>{aviso}</p>}
       <div style={{ overflowX: "auto" }}>
         <table style={{ borderCollapse: "separate", borderSpacing: "6px" }}>
           <thead>

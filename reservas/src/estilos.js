@@ -1,53 +1,70 @@
-// Estilos compartidos entre páginas.
-export const VERDE = "#2C5F4A"
+// Estilos compartidos entre páginas. Los valores vienen de los tokens de index.css.
+export const AZUL = "var(--azul-600)"
 
-export const contenedor = { maxWidth: "700px", margin: "0 auto", padding: "24px" }
+export const contenedor = { maxWidth: "700px", margin: "0 auto", padding: "var(--esp-6) var(--esp-4) var(--esp-7)" }
+
+const botonBase = {
+  border: "1px solid transparent",
+  borderRadius: "var(--radio-sm)",
+  fontWeight: 600,
+  cursor: "pointer",
+  lineHeight: 1.2
+}
 
 export const botonPrincipal = {
-  marginTop: "24px",
+  ...botonBase,
+  marginTop: "var(--esp-5)",
   padding: "14px 28px",
-  backgroundColor: VERDE,
-  color: "white",
-  border: "none",
-  borderRadius: "10px",
-  fontSize: "16px",
-  cursor: "pointer",
-  width: "100%"
+  backgroundColor: "var(--accion)",
+  color: "var(--texto-sobre-azul)",
+  fontSize: "var(--texto-base)",
+  width: "100%",
+  boxShadow: "var(--sombra-sm)"
 }
 
 export const botonChico = {
-  padding: "6px 12px",
-  backgroundColor: VERDE,
-  color: "white",
-  border: "none",
-  borderRadius: "6px",
-  cursor: "pointer"
+  ...botonBase,
+  padding: "8px 14px",
+  minHeight: "36px",
+  backgroundColor: "var(--accion)",
+  color: "var(--texto-sobre-azul)",
+  fontSize: "var(--texto-sm)"
 }
 
 export const botonSecundario = {
   ...botonChico,
-  backgroundColor: "white",
-  color: VERDE,
-  border: `1px solid ${VERDE}`
+  backgroundColor: "var(--accion-suave)",
+  color: "var(--accion)",
+  borderColor: "var(--borde-control)"
 }
 
-export const input = {
-  padding: "8px",
-  borderRadius: "6px",
-  border: "1px solid #ccc"
+// Para acciones destructivas (eliminar, cancelar una hora).
+export const botonPeligro = {
+  ...botonSecundario,
+  color: "var(--peligro)",
+  borderColor: "var(--peligro)"
 }
+
+// Los campos ya tienen su estilo en index.css; esto queda para ajustes puntuales.
+export const input = {}
 
 export const mensajeError = {
-  marginTop: "16px",
-  padding: "12px",
-  borderRadius: "8px",
-  backgroundColor: "#fdecea",
-  color: "#a12622"
+  marginTop: "var(--esp-4)",
+  padding: "var(--esp-3) var(--esp-4)",
+  borderRadius: "var(--radio-sm)",
+  backgroundColor: "var(--error-fondo)",
+  color: "var(--error)",
+  borderLeft: "3px solid var(--error)"
 }
 
+export const mensajeExito = { color: "var(--exito)", fontWeight: 500 }
+
+export const textoSuave = { color: "var(--texto-suave)" }
+
 export const tarjeta = {
-  padding: "20px",
-  borderRadius: "10px",
-  border: `1px solid ${VERDE}`,
-  backgroundColor: "#f3f8f5"
+  padding: "var(--esp-5)",
+  borderRadius: "var(--radio-md)",
+  border: "1px solid var(--borde)",
+  backgroundColor: "var(--fondo)",
+  boxShadow: "var(--sombra-md)"
 }

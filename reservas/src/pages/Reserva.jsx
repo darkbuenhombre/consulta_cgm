@@ -76,7 +76,7 @@ function Reserva() {
     return (
       <div style={contenedor}>
         <Header />
-        <div style={tarjeta}>
+        <div style={{ ...tarjeta, marginTop: "var(--esp-6)", borderTop: "4px solid var(--azul-600)" }}>
           <h2 style={{ marginTop: 0 }}>¡Reserva confirmada!</h2>
           <p><strong>Servicio:</strong> {confirmada.servicio}</p>
           <p><strong>Fecha:</strong> {fechaChilena(confirmada.fecha)}</p>
@@ -102,7 +102,7 @@ function Reserva() {
       <SelectorFecha onSeleccionar={actualizarFecha} />
       <SelectorHora fecha={fechaTexto} recarga={recargaHoras} onSeleccionar={actualizarHora} />
 
-      {error && <div style={mensajeError}>{error}</div>}
+      {error && <div role="alert" style={mensajeError}>{error}</div>}
 
       <button onClick={enviarReserva} disabled={enviando}
         style={{ ...botonPrincipal, opacity: enviando ? 0.6 : 1 }}>

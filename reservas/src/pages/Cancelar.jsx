@@ -55,11 +55,11 @@ function Cancelar() {
         </div>
       )}
 
-      {error && <div style={mensajeError}>{error}</div>}
+      {error && <div role="alert" style={mensajeError}>{error}</div>}
 
       {reserva?.cancelable && (
         <button onClick={cancelar} disabled={cancelando}
-          style={{ ...botonPrincipal, backgroundColor: "#a12622", opacity: cancelando ? 0.6 : 1 }}>
+          style={{ ...botonPrincipal, backgroundColor: "var(--peligro)", opacity: cancelando ? 0.6 : 1 }}>
           {cancelando ? "Cancelando..." : "Cancelar mi hora"}
         </button>
       )}

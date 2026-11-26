@@ -36,21 +36,22 @@ function SelectorHora({ fecha, recarga, onSeleccionar }) {
       <h2>Seleccionar horario</h2>
       {!fecha && <p>Primero selecciona una fecha.</p>}
       {cargando && <p>Cargando horarios...</p>}
-      {error && <p style={{ color: "#a12622" }}>{error}</p>}
+      {error && <p role="alert" style={{ color: "var(--error)" }}>{error}</p>}
       {fecha && !cargando && !error && horarios.length === 0 && (
         <p>No hay atención este día. Por favor elige otra fecha.</p>
       )}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '8px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(84px, 1fr))', gap: 'var(--esp-2)' }}>
         {horarios.map(({ hora, disponible }) => {
           const ocupado = !disponible
           const seleccionado = hora === horaSeleccionada
           return (
-            <button key={hora} onClick={() => seleccionar(hora)} disabled={ocupado}
+            <button key={hora} onClick={() => seleccionar(hora)} disabled={ocupado} aria-pressed={seleccionado}
               style={{
-                padding: '10px', borderRadius: '8px', border: '1px solid #ccc',
+                padding: '10px', minHeight: '44px', borderRadius: 'var(--radio-sm)', fontWeight: 500,
+                border: `1px solid ${seleccionado ? 'var(--accion)' : ocupado ? 'var(--borde)' : 'var(--borde-control)'}`,
                 cursor: ocupado ? 'not-allowed' : 'pointer',
-                backgroundColor: seleccionado ? '#2C5F4A' : ocupado ? '#e0e0e0' : '#f5f5f5',
-                color: seleccionado ? 'white' : ocupado ? '#aaa' : 'black',
+                backgroundColor: seleccionado ? 'var(--accion)' : ocupado ? 'var(--fondo-suave)' : 'var(--accion-suave)',
+                color: seleccionado ? 'var(--texto-sobre-azul)' : ocupado ? 'var(--texto-suave)' : 'var(--texto)',
                 textDecoration: ocupado ? 'line-through' : 'none'
               }}>
               {hora}
@@ -58,7 +59,7 @@ function SelectorHora({ fecha, recarga, onSeleccionar }) {
           )
         })}
       </div>
-      {horaSeleccionada && <p>Hora: {horaSeleccionada} hrs</p>}
+      {horaSeleccionada && <p style={{ marginTop: 'var(--esp-3)', color: 'var(--texto-suave)' }}>Hora: {horaSeleccionada} hrs</p>}
     </div>
   )
 }

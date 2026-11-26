@@ -5,7 +5,12 @@ import AdminHorario from "../components/admin/AdminHorario"
 import AdminReservas from "../components/admin/AdminReservas"
 import AdminServicios from "../components/admin/AdminServicios"
 import Header from "../components/Header"
-import { botonSecundario, contenedor, VERDE } from "../estilos"
+import { botonSecundario, contenedor } from "../estilos"
+
+const pestanaBase = {
+  padding: "var(--esp-3) var(--esp-4)", border: "none", borderBottom: "2px solid transparent",
+  marginBottom: "-1px", fontSize: "var(--texto-base)", whiteSpace: "nowrap"
+}
 
 const PESTANAS = {
   reservas: { titulo: "Reservas", Componente: AdminReservas },
@@ -28,24 +33,26 @@ function AdminPanel() {
 
   return (
     <div style={{ ...contenedor, maxWidth: "1000px" }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "var(--esp-3)", flexWrap: "wrap" }}>
         <Header />
         <button onClick={salir} style={botonSecundario}>Cerrar sesión</button>
       </div>
 
-      <nav style={{ display: "flex", gap: "8px", borderBottom: `2px solid ${VERDE}`, marginBottom: "16px" }}>
-        {Object.entries(PESTANAS).map(([clave, { titulo }]) => (
-          <button key={clave} onClick={() => setPestana(clave)}
-            style={{
-              padding: "10px 16px", border: "none", borderRadius: "8px 8px 0 0", cursor: "pointer",
-              backgroundColor: pestana === clave ? VERDE : "transparent",
-              color: pestana === clave ? "white" : VERDE, fontSize: "15px"
-            }}>
-            {titulo}
-          </button>
-        ))}
-        <Link to="/admin/inventario"
-          style={{ padding: "10px 16px", color: VERDE, fontSize: "15px", textDecoration: "none", alignSelf: "center" }}>
+      <nav aria-label="Secciones" style={{ display: "flex", gap: "var(--esp-1)", borderBottom: "1px solid var(--borde)", margin: "var(--esp-6) 0 var(--esp-5)", overflowX: "auto" }}>
+        {Object.entries(PESTANAS).map(([clave, { titulo }]) => {
+          const activa = pestana === clave
+          return (
+            <button key={clave} onClick={() => setPestana(clave)} aria-current={activa ? "page" : undefined}
+              style={{
+                ...pestanaBase, cursor: "pointer", backgroundColor: "transparent",
+                borderBottom: `2px solid ${activa ? "var(--azul-600)" : "transparent"}`,
+                color: activa ? "var(--azul-600)" : "var(--texto-suave)", fontWeight: activa ? 600 : 500
+              }}>
+              {titulo}
+            </button>
+          )
+        })}
+        <Link to="/admin/inventario" style={{ ...pestanaBase, color: "var(--texto-suave)", fontWeight: 500, textDecoration: "none" }}>
           Inventario
         </Link>
       </nav>

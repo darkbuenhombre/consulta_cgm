@@ -1,5 +1,10 @@
 import { useState } from "react"
 
+const botonNav = {
+  width: '40px', height: '40px', borderRadius: 'var(--radio-sm)', cursor: 'pointer',
+  border: '1px solid var(--borde-control)', backgroundColor: 'var(--accion-suave)', color: 'var(--accion)'
+}
+
 function SelectorFecha({ onSeleccionar }) {
   const MESES = ['Enero','Febrero','Marzo','Abril','Mayo','Junio',
                  'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
@@ -47,34 +52,34 @@ function SelectorFecha({ onSeleccionar }) {
   return (
     <div>
       <h2>Seleccionar fecha</h2>
-      <div>
-        <button onClick={mesAnterior}>←</button>
-        <span> {MESES[mes]} {anio} </span>
-        <button onClick={mesSiguiente}>→</button>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', maxWidth: '360px' }}>
+        <button onClick={mesAnterior} aria-label="Mes anterior" style={botonNav}>←</button>
+        <span aria-live="polite" style={{ fontWeight: 600 }}>{MESES[mes]} {anio}</span>
+        <button onClick={mesSiguiente} aria-label="Mes siguiente" style={botonNav}>→</button>
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '4px', marginTop: '10px' }}>
-        {DIAS.map(d => <div key={d} style={{ textAlign: 'center', fontWeight: 'bold' }}>{d}</div>)}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 'var(--esp-1)', marginTop: 'var(--esp-3)', maxWidth: '360px' }}>
+        {DIAS.map(d => <div key={d} aria-hidden="true" style={{ textAlign: 'center', fontSize: 'var(--texto-xs)', fontWeight: 600, color: 'var(--texto-suave)', paddingBottom: 'var(--esp-1)' }}>{d}</div>)}
         {Array(primerDia).fill(null).map((_, i) => <div key={'vacio-' + i}></div>)}
         {Array(diasEnMes).fill(null).map((_, i) => {
           const dia = i + 1
           const deshabilitado = esPasado(dia) || esDomingo(dia)
           const seleccionado = esSeleccionado(dia)
           return (
-            <div key={dia}
-              onClick={() => !deshabilitado && seleccionarFecha(dia)}
+            <button key={dia} onClick={() => seleccionarFecha(dia)} disabled={deshabilitado} aria-pressed={seleccionado}
+              aria-label={`${dia} de ${MESES[mes]} de ${anio}`}
               style={{
-                textAlign: 'center', padding: '6px',
-                cursor: deshabilitado ? 'default' : 'pointer',
-                color: deshabilitado ? '#ccc' : seleccionado ? 'white' : 'black',
-                backgroundColor: seleccionado ? '#2C5F4A' : 'transparent',
-                borderRadius: '6px'
+                aspectRatio: '1', minHeight: '40px', padding: 0, border: 'none',
+                borderRadius: 'var(--radio-sm)', fontWeight: deshabilitado ? 400 : 600,
+                cursor: deshabilitado ? 'not-allowed' : 'pointer',
+                color: deshabilitado ? 'var(--borde-control)' : seleccionado ? 'var(--texto-sobre-azul)' : 'var(--azul-800)',
+                backgroundColor: seleccionado ? 'var(--accion)' : deshabilitado ? 'transparent' : 'var(--accion-tenue)'
               }}>
               {dia}
-            </div>
+            </button>
           )
         })}
       </div>
-      {fechaSeleccionada && <p>Fecha: {fechaSeleccionada.toLocaleDateString('es-CL')}</p>}
+      {fechaSeleccionada && <p style={{ marginTop: 'var(--esp-3)', color: 'var(--texto-suave)' }}>Fecha: {fechaSeleccionada.toLocaleDateString('es-CL')}</p>}
     </div>
   )
 }

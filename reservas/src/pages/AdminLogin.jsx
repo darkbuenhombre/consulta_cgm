@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Navigate, useNavigate } from "react-router-dom"
 import { api, guardarToken, obtenerToken } from "../api"
 import Header from "../components/Header"
-import { botonPrincipal, contenedor, input, mensajeError } from "../estilos"
+import { botonPrincipal, contenedor, input, mensajeError, tarjeta } from "../estilos"
 
 function AdminLogin() {
   const navigate = useNavigate()
@@ -29,15 +29,15 @@ function AdminLogin() {
   }
 
   return (
-    <div style={{ ...contenedor, maxWidth: "400px" }}>
+    <div style={{ ...contenedor, maxWidth: "420px", paddingTop: "var(--esp-7)" }}>
       <Header />
       <h2>Acceso administrador</h2>
-      <form onSubmit={ingresar} style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-        <input type="email" placeholder="Correo" value={email} required autoComplete="username"
+      <form onSubmit={ingresar} style={{ ...tarjeta, display: "flex", flexDirection: "column", gap: "var(--esp-3)" }}>
+        <input type="email" placeholder="Correo" aria-label="Correo" value={email} required autoComplete="username"
           onChange={e => setEmail(e.target.value)} style={input} />
-        <input type="password" placeholder="Contraseña" value={password} required autoComplete="current-password"
+        <input type="password" placeholder="Contraseña" aria-label="Contraseña" value={password} required autoComplete="current-password"
           onChange={e => setPassword(e.target.value)} style={input} />
-        {error && <div style={mensajeError}>{error}</div>}
+        {error && <div role="alert" style={{ ...mensajeError, marginTop: 0 }}>{error}</div>}
         <button type="submit" disabled={enviando} style={{ ...botonPrincipal, marginTop: "8px" }}>
           {enviando ? "Ingresando..." : "Ingresar"}
         </button>

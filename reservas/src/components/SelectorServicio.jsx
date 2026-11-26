@@ -20,13 +20,13 @@ function SelectorServicio({ onSeleccionar }) {
   return (
     <div>
       <h2>Tipo de consulta</h2>
-      <select value={servicio} onChange={manejoSeleccion}>
+      <select value={servicio} onChange={manejoSeleccion} aria-label="Tipo de consulta" style={{ width: "100%" }}>
         <option value="">Seleccione un servicio...</option>
         {servicios.map(s => (
           <option key={s.codigo} value={s.codigo}>{s.nombre}</option>
         ))}
       </select>
-      {error && <p style={{ color: "#a12622" }}>{error}</p>}
+      {error && <p role="alert" style={{ color: "var(--error)", marginTop: "var(--esp-2)" }}>{error}</p>}
     </div>
   )
 }

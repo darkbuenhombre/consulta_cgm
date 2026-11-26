@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@testing-library/react"
+import { fireEvent, render, screen, waitFor } from "@testing-library/react"
 import App from "./App"
 
 function respuesta(status, cuerpo) {
@@ -89,8 +89,38 @@ test("inventario: muestra alertas y resalta materiales bajo el mínimo", async (
   render(<App />)
 
   expect(await screen.findByRole("alert")).toHaveTextContent("Stock bajo (1)")
-  expect(screen.getByTestId("material-1")).toHaveStyle({ backgroundColor: "#fdecea" })
-  expect(screen.getByTestId("material-2")).not.toHaveStyle({ backgroundColor: "#fdecea" })
+  expect(screen.getByTestId("material-1")).toHaveStyle({ backgroundColor: "#FEF2F2" })
+  expect(screen.getByTestId("material-2")).not.toHaveStyle({ backgroundColor: "#FEF2F2" })
+
+  localStorage.clear()
+  window.history.pushState({}, "", "/")
+})
+
+test("inventario: ajusta el stock desde el recuadro con los botones + y −", async () => {
+  const material = { id: 2, name: "Guantes", category: "Desechables", sku: "GUA", quantity_on_hand: 10, minimum_threshold: 4,
+    expiry_date: null, low_stock: false, expiring_soon: false }
+  global.fetch = jest.fn((url, o) => o?.method === "POST" ? respuesta(200, material)
+    : url.includes("/low-stock") ? respuesta(200, { lowStock: [], expiringSoon: [] })
+    : respuesta(200, [material]))
+  localStorage.setItem("tokenAdmin", "x")
+  window.history.pushState({}, "", "/admin/inventario")
+
+  render(<App />)
+
+  fireEvent.click(await screen.findByRole("button", { name: "Ajustar stock" }))
+  fireEvent.click(screen.getByRole("button", { name: "Aumentar stock" }))
+  fireEvent.click(screen.getByRole("button", { name: "Aumentar stock" }))
+  fireEvent.click(screen.getByRole("button", { name: "Aumentar stock" }))
+  fireEvent.click(screen.getByRole("button", { name: "Reducir stock" }))
+  expect(screen.getByLabelText("Nuevo stock")).toHaveValue(12)
+  expect(screen.getByRole("button", { name: "Guardar ajuste" })).toBeDisabled() // falta el motivo
+  fireEvent.change(screen.getByLabelText("Motivo del ajuste"), { target: { value: "Compra" } })
+  fireEvent.click(screen.getByRole("button", { name: "Guardar ajuste" }))
+
+  await waitFor(() => expect(screen.queryByRole("form", { name: "Ajustar stock" })).not.toBeInTheDocument())
+  const enviado = global.fetch.mock.calls.find(([, o]) => o?.method === "POST")
+  expect(enviado[0]).toContain("/admin/materials/2/adjust")
+  expect(JSON.parse(enviado[1].body)).toEqual({ delta: 2, reason: "Compra" })
 
   localStorage.clear()
   window.history.pushState({}, "", "/")

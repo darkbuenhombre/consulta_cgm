@@ -1,13 +1,135 @@
+/* Tokens de diseño: blanco como base, azul como acento y acción.
+   Contrastes verificados (WCAG AA) contra blanco salvo que se indique. */
+:root {
+  /* Azul */
+  --azul-50: #EFF6FF;   /* superficies seleccionadas / hover suave */
+  --azul-100: #DBEAFE;  /* bordes de superficies azules */
+  --azul-600: #2563EB;  /* primario: 5.17:1 */
+  --azul-700: #1D4ED8;  /* hover: 6.70:1 */
+  --azul-800: #1E40AF;  /* activo / texto sobre azul-50: 7.15:1 */
+  --texto-sobre-azul: #FFFFFF;
+
+  /* Neutros */
+  --fondo: #FFFFFF;
+  --fondo-suave: #F8FAFC;
+  --texto: #0F172A;       /* 17.85:1 */
+  --texto-suave: #475569; /* 7.58:1 */
+  --borde: #E2E8F0;       /* divisores decorativos */
+  --borde-control: #7B8798; /* bordes de campos: 3.65:1 (WCAG 1.4.11) */
+
+  /* Estados */
+  --error: #B91C1C;       /* 5.91:1 sobre --error-fondo */
+  --error-fondo: #FEF2F2;
+  --error-hover: #991B1B;
+  --exito: #15803D;
+  --aviso: #B45309;       /* 4.84:1 sobre --aviso-fondo */
+  --aviso-fondo: #FFFBEB;
+
+  /* Forma y espacio */
+  --radio-sm: 8px;
+  --radio-md: 12px;
+  --esp-1: 4px;
+  --esp-2: 8px;
+  --esp-3: 12px;
+  --esp-4: 16px;
+  --esp-5: 24px;
+  --esp-6: 32px;
+  --esp-7: 48px;
+  --sombra-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --sombra-md: 0 4px 16px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+
+  /* Tipografía */
+  --fuente: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --texto-xs: 13px;
+  --texto-sm: 14px;
+  --texto-base: 16px;
+  --texto-lg: 18px;
+  --texto-xl: 22px;
+  --texto-2xl: 28px;
+
+  /* Variables que cambian con el estado del botón (ver :hover abajo). */
+  --accion: var(--azul-600);
+  --accion-suave: var(--fondo);
+  --accion-tenue: var(--azul-50); /* opciones disponibles (días del calendario) */
+  --peligro: var(--error);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: var(--fuente);
+  font-size: var(--texto-base);
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3 { line-height: 1.25; letter-spacing: -0.01em; font-weight: 650; }
+h1 { font-size: var(--texto-2xl); margin: 0; }
+h2 { font-size: var(--texto-xl); margin: var(--esp-6) 0 var(--esp-3); }
+h3 { font-size: var(--texto-lg); margin: 0 0 var(--esp-3); }
+p { margin: 0 0 var(--esp-3); }
+small { color: var(--texto-suave); }
+
+a { color: var(--azul-600); text-underline-offset: 3px; }
+a:hover { color: var(--azul-700); }
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Campos: también cubre los que no usan el estilo "input" de estilos.js. */
+input:not([type="checkbox"]):not([type="radio"]), select, textarea {
+  font: inherit;
+  font-size: var(--texto-base);
+  color: var(--texto);
+  background: var(--fondo);
+  padding: 10px 12px;
+  border: 1px solid var(--borde-control);
+  border-radius: var(--radio-sm);
+  min-height: 42px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+input::placeholder, textarea::placeholder { color: var(--texto-suave); }
+input:hover:not(:disabled), select:hover:not(:disabled), textarea:hover:not(:disabled) { border-color: var(--texto-suave); }
+input[type="checkbox"] { accent-color: var(--azul-600); width: 18px; height: 18px; }
+
+button {
+  font: inherit;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+/* Los estilos en línea usan estas variables, así el hover funciona sin clases. */
+button:hover:not(:disabled) {
+  --accion: var(--azul-700);
+  --accion-suave: var(--azul-50);
+  --accion-tenue: var(--azul-100);
+  --peligro: var(--error-hover);
+}
+button:active:not(:disabled) { --accion: var(--azul-800); }
+button:disabled { cursor: not-allowed; }
+
+/* Foco visible solo con teclado; 5.17:1 contra blanco. */
+:focus-visible {
+  outline: 2px solid var(--azul-600);
+  outline-offset: 2px;
+}
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: none;
+  border-color: var(--azul-600);
+  box-shadow: 0 0 0 3px var(--azul-100), 0 0 0 1px var(--azul-600);
+}
+
+table { border-spacing: 0; }
+th { font-size: var(--texto-xs); font-weight: 600; color: var(--texto-suave); text-transform: uppercase; letter-spacing: 0.04em; }
+
+@media (max-width: 600px) {
+  h1 { font-size: var(--texto-xl); }
+  h2 { font-size: var(--texto-lg); margin-top: var(--esp-5); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
 }
