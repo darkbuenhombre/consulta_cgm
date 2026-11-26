@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="992" viewBox="0 0 1600 992" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1600" height="992" fill="#fff"/>
+<text x="800.0" y="46" text-anchor="middle" font-size="30" font-weight="bold" fill="#12355b">Cronograma del proyecto – Consulta Dr. Cleomenes García</text>
+<rect x="470.0" y="76" width="68.75" height="766" fill="#eef4f6" stroke="#d5dde3"/>
+<text x="504.375" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S1</text>
+<rect x="538.75" y="76" width="68.75" height="766" fill="#eef4f6" stroke="#d5dde3"/>
+<text x="573.125" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S2</text>
+<rect x="607.5" y="76" width="68.75" height="766" fill="#eef4f6" stroke="#d5dde3"/>
+<text x="641.875" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S3</text>
+<rect x="676.25" y="76" width="68.75" height="766" fill="#eef4f6" stroke="#d5dde3"/>
+<text x="710.625" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S4</text>
+<rect x="745.0" y="76" width="68.75" height="766" fill="#eef4f6" stroke="#d5dde3"/>
+<text x="779.375" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S5</text>
+<rect x="813.75" y="76" width="68.75" height="766" fill="#eef4f6" stroke="#d5dde3"/>
+<text x="848.125" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S6</text>
+<rect x="882.5" y="76" width="68.75" height="766" fill="#eef4f6" stroke="#d5dde3"/>
+<text x="916.875" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S7</text>
+<rect x="951.25" y="76" width="68.75" height="766" fill="#eef4f6" stroke="#d5dde3"/>
+<text x="985.625" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S8</text>
+<rect x="1020.0" y="76" width="68.75" height="766" fill="#eef4f6" stroke="#d5dde3"/>
+<text x="1054.375" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S9</text>
+<rect x="1088.75" y="76" width="68.75" height="766" fill="#eef4f6" stroke="#d5dde3"/>
+<text x="1123.125" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S10</text>
+<rect x="1157.5" y="76" width="68.75" height="766" fill="#eef4f6" stroke="#d5dde3"/>
+<text x="1191.875" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S11</text>
+<rect x="1226.25" y="76" width="68.75" height="766" fill="#eef4f6" stroke="#d5dde3"/>
+<text x="1260.625" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S12</text>
+<rect x="1295.0" y="76" width="68.75" height="766" fill="#fbf1e4" stroke="#d5dde3"/>
+<text x="1329.375" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S13</text>
+<rect x="1363.75" y="76" width="68.75" height="766" fill="#fbf1e4" stroke="#d5dde3"/>
+<text x="1398.125" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S14</text>
+<rect x="1432.5" y="76" width="68.75" height="766" fill="#fbf1e4" stroke="#d5dde3"/>
+<text x="1466.875" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S15</text>
+<rect x="1501.25" y="76" width="68.75" height="766" fill="#fbf1e4" stroke="#d5dde3"/>
+<text x="1535.625" y="104" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">S16</text>
+<text x="30" y="104" font-size="16" font-weight="bold" fill="#12355b">Etapa / tarea</text>
+<rect x="20" y="120" width="1550" height="38" fill="#12355b" opacity="0.12"/>
+<text x="30" y="145" font-size="17" font-weight="bold" fill="#12355b">Gestión</text>
+<line x1="20" y1="196" x2="1570" y2="196" stroke="#d5dde3"/>
+<text x="44" y="183" font-size="15" fill="#333">Definición del problema y objetivos</text>
+<rect x="474.0" y="166" width="60.75" height="22" rx="6" fill="#12355b"/>
+<line x1="20" y1="234" x2="1570" y2="234" stroke="#d5dde3"/>
+<text x="44" y="221" font-size="15" fill="#333">Arquitectura y modelo de datos</text>
+<rect x="542.75" y="204" width="60.75" height="22" rx="6" fill="#12355b"/>
+<line x1="20" y1="272" x2="1570" y2="272" stroke="#d5dde3"/>
+<text x="44" y="259" font-size="15" fill="#333">Configuración del entorno</text>
+<rect x="611.5" y="242" width="60.75" height="22" rx="6" fill="#12355b"/>
+<rect x="20" y="272" width="1550" height="38" fill="#1b8a9a" opacity="0.12"/>
+<text x="30" y="297" font-size="17" font-weight="bold" fill="#1b8a9a">Desarrollo (incrementos)</text>
+<line x1="20" y1="348" x2="1570" y2="348" stroke="#d5dde3"/>
+<text x="44" y="335" font-size="15" fill="#333">Inc. 1: Interfaz del sitio público</text>
+<rect x="680.25" y="318" width="129.5" height="22" rx="6" fill="#1b8a9a"/>
+<line x1="20" y1="386" x2="1570" y2="386" stroke="#d5dde3"/>
+<text x="44" y="373" font-size="15" fill="#333">Inc. 1: Módulo de reservas</text>
+<rect x="817.75" y="356" width="129.5" height="22" rx="6" fill="#1b8a9a"/>
+<line x1="20" y1="424" x2="1570" y2="424" stroke="#d5dde3"/>
+<text x="44" y="411" font-size="15" fill="#333">Inc. 2: Panel de administración</text>
+<rect x="886.5" y="394" width="129.5" height="22" rx="6" fill="#1b8a9a"/>
+<line x1="20" y1="462" x2="1570" y2="462" stroke="#d5dde3"/>
+<text x="44" y="449" font-size="15" fill="#333">Inc. 3: Módulo de inventario</text>
+<rect x="955.25" y="432" width="129.5" height="22" rx="6" fill="#1b8a9a"/>
+<line x1="20" y1="500" x2="1570" y2="500" stroke="#d5dde3"/>
+<text x="44" y="487" font-size="15" fill="#333">Inc. 4: Módulo de notificaciones</text>
+<rect x="1092.75" y="470" width="129.5" height="22" rx="6" fill="#1b8a9a"/>
+<rect x="20" y="500" width="1550" height="38" fill="#d08a2c" opacity="0.12"/>
+<text x="30" y="525" font-size="17" font-weight="bold" fill="#d08a2c">Pruebas y puesta en marcha</text>
+<line x1="20" y1="576" x2="1570" y2="576" stroke="#d5dde3"/>
+<text x="44" y="563" font-size="15" fill="#333">Pruebas al cierre de cada incremento</text>
+<rect x="749.0" y="546" width="60.75" height="22" rx="6" fill="#d08a2c"/>
+<rect x="886.5" y="546" width="60.75" height="22" rx="6" fill="#d08a2c"/>
+<rect x="1024.0" y="546" width="60.75" height="22" rx="6" fill="#d08a2c"/>
+<rect x="1161.5" y="546" width="60.75" height="22" rx="6" fill="#d08a2c"/>
+<line x1="20" y1="614" x2="1570" y2="614" stroke="#d5dde3"/>
+<text x="44" y="601" font-size="15" fill="#333">Pruebas de integración y manuales</text>
+<rect x="1161.5" y="584" width="60.75" height="22" rx="6" fill="#d08a2c"/>
+<line x1="20" y1="652" x2="1570" y2="652" stroke="#d5dde3"/>
+<text x="44" y="639" font-size="15" fill="#333">Pruebas de usabilidad y aceptación</text>
+<rect x="1230.25" y="622" width="60.75" height="22" rx="6" fill="#d08a2c"/>
+<line x1="20" y1="690" x2="1570" y2="690" stroke="#d5dde3"/>
+<text x="44" y="677" font-size="15" fill="#333">Publicación del sistema y capacitación</text>
+<rect x="1230.25" y="660" width="60.75" height="22" rx="6" fill="#d08a2c"/>
+<line x1="20" y1="728" x2="1570" y2="728" stroke="#d5dde3"/>
+<text x="44" y="715" font-size="15" fill="#333">Funcionamiento y medición de métricas</text>
+<rect x="1299.0" y="698" width="267.0" height="22" rx="6" fill="#d08a2c"/>
+<rect x="20" y="728" width="1550" height="38" fill="#6b7a8f" opacity="0.12"/>
+<text x="30" y="753" font-size="17" font-weight="bold" fill="#6b7a8f">Monitoreo y control</text>
+<line x1="20" y1="804" x2="1570" y2="804" stroke="#d5dde3"/>
+<text x="44" y="791" font-size="15" fill="#333">Elaboración del informe</text>
+<rect x="1024.0" y="774" width="267.0" height="22" rx="6" fill="#6b7a8f"/>
+<line x1="20" y1="842" x2="1570" y2="842" stroke="#d5dde3"/>
+<text x="44" y="829" font-size="15" fill="#333">Revisión de avance por incremento</text>
+<rect x="611.5" y="812" width="60.75" height="22" rx="6" fill="#6b7a8f"/>
+<rect x="749.0" y="812" width="60.75" height="22" rx="6" fill="#6b7a8f"/>
+<rect x="886.5" y="812" width="60.75" height="22" rx="6" fill="#6b7a8f"/>
+<rect x="1024.0" y="812" width="60.75" height="22" rx="6" fill="#6b7a8f"/>
+<rect x="1161.5" y="812" width="60.75" height="22" rx="6" fill="#6b7a8f"/>
+<line x1="916.875" y1="76" x2="916.875" y2="860" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5,4"/>
+<polygon points="916.875,860 926.875,872 916.875,884 906.875,872" fill="#c0392b"/>
+<line x1="1191.875" y1="76" x2="1191.875" y2="860" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5,4"/>
+<polygon points="1191.875,860 1201.875,872 1191.875,884 1181.875,872" fill="#c0392b"/>
+<line x1="1260.625" y1="76" x2="1260.625" y2="860" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5,4"/>
+<polygon points="1260.625,860 1270.625,872 1260.625,884 1250.625,872" fill="#c0392b"/>
+<line x1="1535.625" y1="76" x2="1535.625" y2="860" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5,4"/>
+<polygon points="1535.625,860 1545.625,872 1535.625,884 1525.625,872" fill="#c0392b"/>
+<text x="30" y="877" font-size="16" font-weight="bold" fill="#c0392b">Hitos</text>
+<text x="30" y="917" font-size="15" fill="#333">◆ S7: Reserva en línea operativa (OE1)   ◆ S11: Sistema completo   ◆ S12: Puesta en marcha   ◆ S16: Medición de métricas</text>
+<text x="30" y="947" font-size="14" fill="#333">Semanas 1 a 12: desarrollo del proyecto.  Semanas 13 a 16 (fondo anaranjado): primer mes de funcionamiento, en el que se miden las métricas de los objetivos específicos.</text>
+</svg>

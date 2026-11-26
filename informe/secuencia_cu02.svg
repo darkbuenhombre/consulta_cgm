@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1318" viewBox="0 0 1600 1318" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1600" height="1318" fill="#fff"/>
+<text x="800.0" y="46" text-anchor="middle" font-size="28" font-weight="bold" fill="#12355b">Diagrama de secuencia – CU02 – Reservar hora</text>
+<line x1="150.0" y1="170" x2="150.0" y2="1288" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<g stroke="#12355b" stroke-width="3" fill="none"><circle cx="150.0" cy="88" r="13"/><line x1="150.0" y1="101" x2="150.0" y2="135"/><line x1="128.0" y1="112" x2="172.0" y2="112"/><line x1="150.0" y1="135" x2="132.0" y2="158"/><line x1="150.0" y1="135" x2="168.0" y2="158"/></g>
+<text x="150.0" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b" stroke="#fff" stroke-width="5" paint-order="stroke">Paciente</text>
+<line x1="475.0" y1="170" x2="475.0" y2="1288" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="365.0" y="80" width="220" height="66" rx="8" fill="#12355b"/>
+<text x="475.0" y="108" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Interfaz web</text>
+<text x="475.0" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">(React)</text>
+<line x1="800.0" y1="170" x2="800.0" y2="1288" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="690.0" y="80" width="220" height="66" rx="8" fill="#12355b"/>
+<text x="800.0" y="108" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">API</text>
+<text x="800.0" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">(Express)</text>
+<line x1="1125.0" y1="170" x2="1125.0" y2="1288" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="1015.0" y="80" width="220" height="66" rx="8" fill="#12355b"/>
+<text x="1125.0" y="108" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Base de datos</text>
+<text x="1125.0" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">(PostgreSQL)</text>
+<line x1="1450.0" y1="170" x2="1450.0" y2="1288" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="1340.0" y="80" width="220" height="66" rx="8" fill="#12355b"/>
+<text x="1450.0" y="108" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Gmail</text>
+<text x="1450.0" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">(SMTP)</text>
+<line x1="150.0" y1="220" x2="465.0" y2="220" stroke="#333" stroke-width="1.8"/>
+<polygon points="475.0,220 463.0,214 463.0,226" fill="#333"/>
+<text x="312.5" y="212" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Selecciona servicio y fecha</text>
+<line x1="475.0" y1="270" x2="790.0" y2="270" stroke="#333" stroke-width="1.8"/>
+<polygon points="800.0,270 788.0,264 788.0,276" fill="#333"/>
+<text x="637.5" y="262" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">GET /api/disponibilidad?fecha</text>
+<line x1="800.0" y1="320" x2="1115.0" y2="320" stroke="#333" stroke-width="1.8"/>
+<polygon points="1125.0,320 1113.0,314 1113.0,326" fill="#333"/>
+<text x="962.5" y="312" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Horario del día, días bloqueados y reservas</text>
+<line x1="1125.0" y1="370" x2="800.0" y2="370" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M812.0,364 L800.0,370 L812.0,376" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="962.5" y="362" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Tramos, bloqueo y horas ocupadas</text>
+<path d="M800.0,420 h46 v24 h-40" fill="none" stroke="#333" stroke-width="1.8"/>
+<polygon points="806.0,444 816.0,439 816.0,449" fill="#333"/>
+<text x="856.0" y="437" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Calcular bloques disponibles</text>
+<line x1="800.0" y1="482" x2="475.0" y2="482" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M487.0,476 L475.0,482 L487.0,488" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="637.5" y="474" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Lista de horarios</text>
+<line x1="150.0" y1="532" x2="465.0" y2="532" stroke="#333" stroke-width="1.8"/>
+<polygon points="475.0,532 463.0,526 463.0,538" fill="#333"/>
+<text x="312.5" y="524" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Elige hora, ingresa datos y confirma</text>
+<line x1="475.0" y1="582" x2="790.0" y2="582" stroke="#333" stroke-width="1.8"/>
+<polygon points="800.0,582 788.0,576 788.0,588" fill="#333"/>
+<text x="637.5" y="574" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">POST /api/reservas</text>
+<path d="M800.0,632 h46 v24 h-40" fill="none" stroke="#333" stroke-width="1.8"/>
+<polygon points="806.0,656 816.0,651 816.0,661" fill="#333"/>
+<text x="856.0" y="649" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Validar datos (Zod) y RUT</text>
+<line x1="800.0" y1="728" x2="475.0" y2="728" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M487.0,722 L475.0,728 L487.0,734" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="637.5" y="720" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">400: mensaje de error</text>
+<line x1="800.0" y1="812" x2="1115.0" y2="812" stroke="#333" stroke-width="1.8"/>
+<polygon points="1125.0,812 1113.0,806 1113.0,818" fill="#333"/>
+<text x="962.5" y="804" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">BEGIN; verificar servicio y bloque libre</text>
+<line x1="800.0" y1="896" x2="475.0" y2="896" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M487.0,890 L475.0,896 L487.0,902" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="637.5" y="888" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">409: horario no disponible</text>
+<line x1="800.0" y1="980" x2="1115.0" y2="980" stroke="#333" stroke-width="1.8"/>
+<polygon points="1125.0,980 1113.0,974 1113.0,986" fill="#333"/>
+<text x="962.5" y="972" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">INSERT paciente (o actualizar por RUT) e INSERT reserva; COMMIT</text>
+<line x1="1125.0" y1="1030" x2="800.0" y2="1030" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M812.0,1024 L800.0,1030 L812.0,1036" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="962.5" y="1022" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Reserva creada (estado pendiente)</text>
+<line x1="800.0" y1="1080" x2="1440.0" y2="1080" stroke="#333" stroke-width="1.8"/>
+<polygon points="1450.0,1080 1438.0,1074 1438.0,1086" fill="#333"/>
+<text x="1125.0" y="1072" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Enviar correo de confirmación con enlace de cancelación</text>
+<line x1="800.0" y1="1130" x2="475.0" y2="1130" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M487.0,1124 L475.0,1130 L487.0,1136" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="637.5" y="1122" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">201: datos de la reserva</text>
+<line x1="475.0" y1="1180" x2="150.0" y2="1180" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M162.0,1174 L150.0,1180 L162.0,1186" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="312.5" y="1172" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Muestra la confirmación</text>
+<rect x="54" y="854" width="1492" height="376" fill="none" stroke="#1b8a9a" stroke-width="1.6"/>
+<path d="M54,854 h62 v20 l-10,10 h-52 z" fill="#e8f3f5" stroke="#1b8a9a" stroke-width="1.6"/>
+<text x="80" y="874" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">alt</text>
+<text x="130" y="874" text-anchor="start" font-size="14" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">[el bloque ya fue tomado]</text>
+<line x1="54" y1="938" x2="1546" y2="938" stroke="#1b8a9a" stroke-width="1.4" stroke-dasharray="8,5"/>
+<text x="66" y="958" text-anchor="start" font-size="14" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">[el bloque está libre]</text>
+<rect x="40" y="686" width="1520" height="558" fill="none" stroke="#1b8a9a" stroke-width="1.6"/>
+<path d="M40,686 h62 v20 l-10,10 h-52 z" fill="#e8f3f5" stroke="#1b8a9a" stroke-width="1.6"/>
+<text x="66" y="706" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">alt</text>
+<text x="116" y="706" text-anchor="start" font-size="14" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">[datos inválidos]</text>
+<line x1="40" y1="770" x2="1560" y2="770" stroke="#1b8a9a" stroke-width="1.4" stroke-dasharray="8,5"/>
+<text x="52" y="790" text-anchor="start" font-size="14" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">[datos válidos]</text>
+</svg>

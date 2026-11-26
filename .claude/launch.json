@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "api-pruebas",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd backend && set -a && . ./.env && set +a && DATABASE_URL=\"$TEST_DATABASE_URL\" GMAIL_USER= GMAIL_APP_PASSWORD= node src/index.js"],
+      "port": 4000
+    },
+    {
+      "name": "web",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd reservas && BROWSER=none npm start"],
+      "port": 3000
+    }
+  ]
+}

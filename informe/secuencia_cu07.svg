@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="874" viewBox="0 0 1600 874" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1600" height="874" fill="#fff"/>
+<text x="800.0" y="46" text-anchor="middle" font-size="28" font-weight="bold" fill="#12355b">Diagrama de secuencia – CU07 – Bloquear un día sin atención</text>
+<line x1="150.0" y1="170" x2="150.0" y2="844" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<g stroke="#12355b" stroke-width="3" fill="none"><circle cx="150.0" cy="88" r="13"/><line x1="150.0" y1="101" x2="150.0" y2="135"/><line x1="128.0" y1="112" x2="172.0" y2="112"/><line x1="150.0" y1="135" x2="132.0" y2="158"/><line x1="150.0" y1="135" x2="168.0" y2="158"/></g>
+<text x="150.0" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b" stroke="#fff" stroke-width="5" paint-order="stroke">Odontólogo</text>
+<line x1="583.3333333333333" y1="170" x2="583.3333333333333" y2="844" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="473.33333333333326" y="80" width="220" height="66" rx="8" fill="#12355b"/>
+<text x="583.3333333333333" y="108" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Interfaz web</text>
+<text x="583.3333333333333" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">(React)</text>
+<line x1="1016.6666666666666" y1="170" x2="1016.6666666666666" y2="844" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="906.6666666666666" y="80" width="220" height="66" rx="8" fill="#12355b"/>
+<text x="1016.6666666666666" y="108" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">API</text>
+<text x="1016.6666666666666" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">(Express)</text>
+<line x1="1450.0" y1="170" x2="1450.0" y2="844" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="1340.0" y="80" width="220" height="66" rx="8" fill="#12355b"/>
+<text x="1450.0" y="108" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Base de datos</text>
+<text x="1450.0" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">(PostgreSQL)</text>
+<line x1="150.0" y1="220" x2="573.3333333333333" y2="220" stroke="#333" stroke-width="1.8"/>
+<polygon points="583.3333333333333,220 571.3333333333333,214 571.3333333333333,226" fill="#333"/>
+<text x="366.66666666666663" y="212" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Ingresa fecha y motivo, y presiona Bloquear día</text>
+<line x1="583.3333333333333" y1="270" x2="1006.6666666666666" y2="270" stroke="#333" stroke-width="1.8"/>
+<polygon points="1016.6666666666666,270 1004.6666666666666,264 1004.6666666666666,276" fill="#333"/>
+<text x="800.0" y="262" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">POST /api/admin/dias-bloqueados (con token)</text>
+<path d="M1016.6666666666666,320 h46 v24 h-40" fill="none" stroke="#333" stroke-width="1.8"/>
+<polygon points="1022.6666666666666,344 1032.6666666666665,339 1032.6666666666665,349" fill="#333"/>
+<text x="1072.6666666666665" y="337" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Verificar token JWT y validar fecha</text>
+<line x1="1016.6666666666666" y1="382" x2="1440.0" y2="382" stroke="#333" stroke-width="1.8"/>
+<polygon points="1450.0,382 1438.0,376 1438.0,388" fill="#333"/>
+<text x="1233.3333333333333" y="374" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Contar reservas pendientes o confirmadas de la fecha</text>
+<line x1="1450.0" y1="432" x2="1016.6666666666666" y2="432" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M1028.6666666666665,426 L1016.6666666666666,432 L1028.6666666666665,438" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="1233.3333333333333" y="424" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Cantidad de reservas activas</text>
+<line x1="1016.6666666666666" y1="516" x2="583.3333333333333" y2="516" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M595.3333333333333,510 L583.3333333333333,516 L595.3333333333333,522" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="800.0" y="508" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">409: tiene N reservas activas, cancélalas primero</text>
+<line x1="583.3333333333333" y1="566" x2="150.0" y2="566" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M162.0,560 L150.0,566 L162.0,572" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="366.66666666666663" y="558" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Muestra el aviso</text>
+<line x1="1016.6666666666666" y1="650" x2="1440.0" y2="650" stroke="#333" stroke-width="1.8"/>
+<polygon points="1450.0,650 1438.0,644 1438.0,656" fill="#333"/>
+<text x="1233.3333333333333" y="642" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">INSERT día bloqueado</text>
+<line x1="1016.6666666666666" y1="700" x2="583.3333333333333" y2="700" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M595.3333333333333,694 L583.3333333333333,700 L595.3333333333333,706" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="800.0" y="692" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">201: día bloqueado</text>
+<line x1="583.3333333333333" y1="750" x2="150.0" y2="750" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M162.0,744 L150.0,750 L162.0,756" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="366.66666666666663" y="742" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Agrega el día a la lista</text>
+<rect x="40" y="474" width="1520" height="326" fill="none" stroke="#1b8a9a" stroke-width="1.6"/>
+<path d="M40,474 h62 v20 l-10,10 h-52 z" fill="#e8f3f5" stroke="#1b8a9a" stroke-width="1.6"/>
+<text x="66" y="494" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">alt</text>
+<text x="116" y="494" text-anchor="start" font-size="14" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">[hay reservas activas]</text>
+<line x1="40" y1="608" x2="1560" y2="608" stroke="#1b8a9a" stroke-width="1.4" stroke-dasharray="8,5"/>
+<text x="52" y="628" text-anchor="start" font-size="14" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">[no hay reservas activas]</text>
+</svg>

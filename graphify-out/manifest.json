@@ -1,0 +1,260 @@
+{
+  "backend/db/schema.sql": {
+    "mtime": 1793132926.463682,
+    "seen": 1793465397.249388,
+    "ast_hash": "f20dce5872757f820fb631ea6d4032e2",
+    "semantic_hash": "f20dce5872757f820fb631ea6d4032e2"
+  },
+  "backend/db/seed.sql": {
+    "mtime": 1793132929.6736681,
+    "seen": 1793465397.2493951,
+    "ast_hash": "01bffbb3d06487b0c33f4c86cccdc788",
+    "semantic_hash": "01bffbb3d06487b0c33f4c86cccdc788"
+  },
+  "backend/package.json": {
+    "mtime": 1793132983.1941729,
+    "seen": 1793465397.2493987,
+    "ast_hash": "2268b1c299b7876b1736d1a8411a29fd",
+    "semantic_hash": "2268b1c299b7876b1736d1a8411a29fd"
+  },
+  "backend/scripts/crear-admin.js": {
+    "mtime": 1793154642.4740665,
+    "seen": 1793465397.2494016,
+    "ast_hash": "7f9008e5fea4f4641d655fb3aa898f0b",
+    "semantic_hash": "7f9008e5fea4f4641d655fb3aa898f0b"
+  },
+  "backend/scripts/init-db.js": {
+    "mtime": 1793154641.507072,
+    "seen": 1793465397.2494042,
+    "ast_hash": "888303961532ad84a0f22bc1ff429b43",
+    "semantic_hash": "888303961532ad84a0f22bc1ff429b43"
+  },
+  "backend/src/app.js": {
+    "mtime": 1793154617.6492002,
+    "seen": 1793465397.249406,
+    "ast_hash": "e3dc2bab4b23c276f482eb01721bf924",
+    "semantic_hash": "e3dc2bab4b23c276f482eb01721bf924"
+  },
+  "backend/src/config.js": {
+    "mtime": 1793142729.7934866,
+    "seen": 1793465397.249409,
+    "ast_hash": "bbf5b2bbb8801a276f88899a4ef5d0d9",
+    "semantic_hash": "bbf5b2bbb8801a276f88899a4ef5d0d9"
+  },
+  "backend/src/db.js": {
+    "mtime": 1793142731.7404752,
+    "seen": 1793465397.249411,
+    "ast_hash": "c8e03ba10fffa53fc4cfda14f172f919",
+    "semantic_hash": "c8e03ba10fffa53fc4cfda14f172f919"
+  },
+  "backend/src/index.js": {
+    "mtime": 1793154639.8100815,
+    "seen": 1793465397.249413,
+    "ast_hash": "dcb11767f1f51e19eed93dc36d05bdb8",
+    "semantic_hash": "dcb11767f1f51e19eed93dc36d05bdb8"
+  },
+  "backend/src/middleware/auth.js": {
+    "mtime": 1793143081.7372904,
+    "seen": 1793465397.2494152,
+    "ast_hash": "29d149eb96a764f5616fdcab84639b48",
+    "semantic_hash": "29d149eb96a764f5616fdcab84639b48"
+  },
+  "backend/src/routes/admin.js": {
+    "mtime": 1793154615.9492083,
+    "seen": 1793465397.249417,
+    "ast_hash": "04997e97e5c37177224ff1e3dbcd5443",
+    "semantic_hash": "04997e97e5c37177224ff1e3dbcd5443"
+  },
+  "backend/src/routes/auth.js": {
+    "mtime": 1793143083.9532752,
+    "seen": 1793465397.2494192,
+    "ast_hash": "78f7efe0ab6bc75c616a79d0189b51d3",
+    "semantic_hash": "78f7efe0ab6bc75c616a79d0189b51d3"
+  },
+  "backend/src/routes/publico.js": {
+    "mtime": 1793143080.5392985,
+    "seen": 1793465397.2494211,
+    "ast_hash": "dac183353fd045c9b9ed5b3a210fc57f",
+    "semantic_hash": "dac183353fd045c9b9ed5b3a210fc57f"
+  },
+  "backend/src/services/agenda.js": {
+    "mtime": 1793143078.1983144,
+    "seen": 1793465397.249423,
+    "ast_hash": "f1d2ec3d8db23c73cd9b4f0d97963c50",
+    "semantic_hash": "f1d2ec3d8db23c73cd9b4f0d97963c50"
+  },
+  "backend/src/services/email.js": {
+    "mtime": 1793143079.3423066,
+    "seen": 1793465397.2494254,
+    "ast_hash": "c6eaa9289ac9632fcfa12ac1f2a4c2e1",
+    "semantic_hash": "c6eaa9289ac9632fcfa12ac1f2a4c2e1"
+  },
+  "backend/src/utils/disponibilidad.js": {
+    "mtime": 1793142736.8234453,
+    "seen": 1793465397.2494273,
+    "ast_hash": "7cffca634cd22b02e6801b0ba96a19c1",
+    "semantic_hash": "7cffca634cd22b02e6801b0ba96a19c1"
+  },
+  "backend/src/utils/errores.js": {
+    "mtime": 1793142733.772463,
+    "seen": 1793465397.2494292,
+    "ast_hash": "51bb01f050ca6422ec96f542fbb1a4de",
+    "semantic_hash": "51bb01f050ca6422ec96f542fbb1a4de"
+  },
+  "backend/src/utils/rut.js": {
+    "mtime": 1793142735.2874544,
+    "seen": 1793465397.2494314,
+    "ast_hash": "c188e4464b9d0b7d5fb4377d9edaa314",
+    "semantic_hash": "c188e4464b9d0b7d5fb4377d9edaa314"
+  },
+  "backend/src/validators.js": {
+    "mtime": 1793142738.2894366,
+    "seen": 1793465397.2494333,
+    "ast_hash": "a74a4653c4819ada982d57ab20bb2d75",
+    "semantic_hash": "a74a4653c4819ada982d57ab20bb2d75"
+  },
+  "backend/test/api.test.js": {
+    "mtime": 1793154913.071528,
+    "seen": 1793465397.2494352,
+    "ast_hash": "17afcd568e1a95b1cae0e89a6884ab87",
+    "semantic_hash": "17afcd568e1a95b1cae0e89a6884ab87"
+  },
+  "backend/test/disponibilidad.test.js": {
+    "mtime": 1793154912.1965368,
+    "seen": 1793465397.2494373,
+    "ast_hash": "99fe10c55aae4cc9cdad0e0bcc9fe8c2",
+    "semantic_hash": "99fe10c55aae4cc9cdad0e0bcc9fe8c2"
+  },
+  "backend/test/rut.test.js": {
+    "mtime": 1793154926.657759,
+    "seen": 1793465397.2494392,
+    "ast_hash": "2be9df3951d0e6f1aad51a7e7fc77e66",
+    "semantic_hash": "2be9df3951d0e6f1aad51a7e7fc77e66"
+  },
+  "reservas/package.json": {
+    "mtime": 1793154974.0169122,
+    "seen": 1793465397.2494416,
+    "ast_hash": "405447a28dd3e44c2816bb8a222c629a",
+    "semantic_hash": "405447a28dd3e44c2816bb8a222c629a"
+  },
+  "reservas/public/manifest.json": {
+    "mtime": 1789348689.606632,
+    "seen": 1793465397.2494435,
+    "ast_hash": "d9d975cebe2ec20b6c652e1e4c12ccf0",
+    "semantic_hash": "d9d975cebe2ec20b6c652e1e4c12ccf0"
+  },
+  "reservas/src/App.js": {
+    "mtime": 1793156326.7010314,
+    "seen": 1793465397.2494454,
+    "ast_hash": "67871f0d7a6494d19195a74f23eda283",
+    "semantic_hash": "67871f0d7a6494d19195a74f23eda283"
+  },
+  "reservas/src/App.test.js": {
+    "mtime": 1793157239.2564995,
+    "seen": 1793465397.2494473,
+    "ast_hash": "b00f5a03f6bd3baba922422cd27d7880",
+    "semantic_hash": "b00f5a03f6bd3baba922422cd27d7880"
+  },
+  "reservas/src/api.js": {
+    "mtime": 1793155419.0817406,
+    "seen": 1793465397.2494493,
+    "ast_hash": "05eefad0209a4c3357c245b5fb9305c4",
+    "semantic_hash": "05eefad0209a4c3357c245b5fb9305c4"
+  },
+  "reservas/src/components/DatosPaciente.jsx": {
+    "mtime": 1789349946.6952353,
+    "seen": 1793465397.2494512,
+    "ast_hash": "3cfeaadd38451294e5046131e4e88318",
+    "semantic_hash": "3cfeaadd38451294e5046131e4e88318"
+  },
+  "reservas/src/components/Header.jsx": {
+    "mtime": 1789349887.5844975,
+    "seen": 1793465397.249453,
+    "ast_hash": "40f8f3ca47349b8c47baa2559c3fcac0",
+    "semantic_hash": "40f8f3ca47349b8c47baa2559c3fcac0"
+  },
+  "reservas/src/components/SelectorFecha.jsx": {
+    "mtime": 1789349981.0301664,
+    "seen": 1793465397.2494557,
+    "ast_hash": "aac3557f79f384418034b0d92e179983",
+    "semantic_hash": "aac3557f79f384418034b0d92e179983"
+  },
+  "reservas/src/components/SelectorHora.jsx": {
+    "mtime": 1793155426.7925758,
+    "seen": 1793465397.2494574,
+    "ast_hash": "25f0428af1b63a127aa9966ecd1e30d5",
+    "semantic_hash": "25f0428af1b63a127aa9966ecd1e30d5"
+  },
+  "reservas/src/components/SelectorServicio.jsx": {
+    "mtime": 1793155425.6566055,
+    "seen": 1793465397.2494593,
+    "ast_hash": "a8df9c59bce2153f9271dec28ea52236",
+    "semantic_hash": "a8df9c59bce2153f9271dec28ea52236"
+  },
+  "reservas/src/components/admin/AdminHorario.jsx": {
+    "mtime": 1793156318.5665324,
+    "seen": 1793465397.249461,
+    "ast_hash": "466c7fc950397b316675dc5a447c9d52",
+    "semantic_hash": "466c7fc950397b316675dc5a447c9d52"
+  },
+  "reservas/src/components/admin/AdminReservas.jsx": {
+    "mtime": 1793156316.9927783,
+    "seen": 1793465397.2494626,
+    "ast_hash": "633a09464610703d3ac25e283ea4b21a",
+    "semantic_hash": "633a09464610703d3ac25e283ea4b21a"
+  },
+  "reservas/src/components/admin/AdminServicios.jsx": {
+    "mtime": 1793156317.8363726,
+    "seen": 1793465397.2494643,
+    "ast_hash": "c90a1610d9336ebf3e187c0609a0d59e",
+    "semantic_hash": "c90a1610d9336ebf3e187c0609a0d59e"
+  },
+  "reservas/src/estilos.js": {
+    "mtime": 1793155423.2661705,
+    "seen": 1793465397.2494662,
+    "ast_hash": "143017fe823c85b0770d7db36dea084d",
+    "semantic_hash": "143017fe823c85b0770d7db36dea084d"
+  },
+  "reservas/src/index.js": {
+    "mtime": 1789349834.7048817,
+    "seen": 1793465397.2494678,
+    "ast_hash": "4a66f2bc77b98f3db6a7d39815561949",
+    "semantic_hash": "4a66f2bc77b98f3db6a7d39815561949"
+  },
+  "reservas/src/pages/AdminLogin.jsx": {
+    "mtime": 1793156253.4034953,
+    "seen": 1793465397.2494698,
+    "ast_hash": "9b50542b1200d7f153b83de1bf5a097c",
+    "semantic_hash": "9b50542b1200d7f153b83de1bf5a097c"
+  },
+  "reservas/src/pages/AdminPanel.jsx": {
+    "mtime": 1793156316.2990973,
+    "seen": 1793465397.2494714,
+    "ast_hash": "0be44ff8bf10aa77afe71a0604b98671",
+    "semantic_hash": "0be44ff8bf10aa77afe71a0604b98671"
+  },
+  "reservas/src/pages/Cancelar.jsx": {
+    "mtime": 1793156251.9324005,
+    "seen": 1793465397.2494733,
+    "ast_hash": "66de32182e0edfc589cd0e6f00f3f7d2",
+    "semantic_hash": "66de32182e0edfc589cd0e6f00f3f7d2"
+  },
+  "reservas/src/pages/Reserva.jsx": {
+    "mtime": 1793156250.3491888,
+    "seen": 1793465397.2494752,
+    "ast_hash": "74299364fe802e1de0039c4eee720170",
+    "semantic_hash": "74299364fe802e1de0039c4eee720170"
+  },
+  "reservas/src/reportWebVitals.js": {
+    "mtime": 1789348689.6239192,
+    "seen": 1793465397.2494771,
+    "ast_hash": "240e2381f826a9bb84d178b29b7b9abe",
+    "semantic_hash": "240e2381f826a9bb84d178b29b7b9abe"
+  },
+  "reservas/src/setupTests.js": {
+    "mtime": 1789348689.6253226,
+    "seen": 1793465397.2494788,
+    "ast_hash": "1a77571e1a8cf36018a41bcedf60db75",
+    "semantic_hash": "1a77571e1a8cf36018a41bcedf60db75"
+  }
+}

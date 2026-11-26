@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1602" height="1528" viewBox="0 0 1602 1528" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1602" height="1528" fill="#fff"/>
+<text x="801.0" y="46" text-anchor="middle" font-size="30" font-weight="bold" fill="#12355b">Visual Story Mapping – Consulta Dr. Cleomenes García</text>
+<rect x="215" y="80" width="578" height="44" rx="10" fill="#12355b"/>
+<text x="504.0" y="108" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">Paciente</text>
+<rect x="803" y="80" width="774" height="44" rx="10" fill="#1b8a9a"/>
+<text x="1190.0" y="108" text-anchor="middle" font-size="18" font-weight="bold" fill="#fff">Odontólogo</text>
+<text x="20" y="108" text-anchor="start" font-size="16" font-weight="bold" fill="#12355b">Usuario</text>
+<text x="20" y="190" text-anchor="start" font-size="16" font-weight="bold" fill="#12355b">Actividades</text>
+<rect x="215" y="150" width="186" height="70" rx="8" fill="#12355b" opacity="0.9"/>
+<text x="308.0" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Conocer la</text>
+<text x="308.0" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">consulta</text>
+<rect x="411" y="150" width="186" height="70" rx="8" fill="#12355b" opacity="0.9"/>
+<text x="504.0" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Reservar</text>
+<text x="504.0" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">una hora</text>
+<rect x="607" y="150" width="186" height="70" rx="8" fill="#12355b" opacity="0.9"/>
+<text x="700.0" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Confirmar o</text>
+<text x="700.0" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">cancelar</text>
+<rect x="803" y="150" width="186" height="70" rx="8" fill="#12355b" opacity="0.9"/>
+<text x="896.0" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Acceder al</text>
+<text x="896.0" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">panel</text>
+<rect x="999" y="150" width="186" height="70" rx="8" fill="#12355b" opacity="0.9"/>
+<text x="1092.0" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Gestionar</text>
+<text x="1092.0" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">las reservas</text>
+<rect x="1195" y="150" width="186" height="70" rx="8" fill="#12355b" opacity="0.9"/>
+<text x="1288.0" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Configurar</text>
+<text x="1288.0" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">la consulta</text>
+<rect x="1391" y="150" width="186" height="70" rx="8" fill="#12355b" opacity="0.9"/>
+<text x="1484.0" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Controlar el</text>
+<text x="1484.0" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">inventario</text>
+<rect x="10" y="240" width="1582" height="212" fill="#e8f3f5"/>
+<line x1="10" y1="240" x2="1592" y2="240" stroke="#12355b" stroke-width="2" stroke-dasharray="8,5"/>
+<text x="20" y="270" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">Incremento 1</text>
+<text x="20" y="289" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">S4–S7</text>
+<rect x="218" y="250" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="308.0" y="273" text-anchor="middle" font-size="13" fill="#333">HU01 Ver servicios</text>
+<text x="308.0" y="290" text-anchor="middle" font-size="13" fill="#333">y precios</text>
+<rect x="414" y="250" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="504.0" y="273" text-anchor="middle" font-size="13" fill="#333">HU02 Elegir servicio,</text>
+<text x="504.0" y="290" text-anchor="middle" font-size="13" fill="#333">fecha y hora</text>
+<rect x="414" y="314" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="504.0" y="337" text-anchor="middle" font-size="13" fill="#333">HU03 Ingresar datos</text>
+<text x="504.0" y="354" text-anchor="middle" font-size="13" fill="#333">con RUT validado</text>
+<rect x="414" y="378" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="504.0" y="401" text-anchor="middle" font-size="13" fill="#333">HU04 Evitar horarios</text>
+<text x="504.0" y="418" text-anchor="middle" font-size="13" fill="#333">ya tomados</text>
+<rect x="10" y="452" width="1582" height="212" fill="#e8f3f5"/>
+<line x1="10" y1="452" x2="1592" y2="452" stroke="#12355b" stroke-width="2" stroke-dasharray="8,5"/>
+<text x="20" y="482" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">Incremento 2</text>
+<text x="20" y="501" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">S7–S8</text>
+<rect x="806" y="462" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="896.0" y="485" text-anchor="middle" font-size="13" fill="#333">HU05 Iniciar sesión</text>
+<text x="896.0" y="502" text-anchor="middle" font-size="13" fill="#333">segura</text>
+<rect x="1002" y="462" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="1092.0" y="485" text-anchor="middle" font-size="13" fill="#333">HU06 Ver reservas</text>
+<text x="1092.0" y="502" text-anchor="middle" font-size="13" fill="#333">con filtros</text>
+<rect x="1002" y="526" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="1092.0" y="549" text-anchor="middle" font-size="13" fill="#333">HU07 Cambiar estado</text>
+<text x="1092.0" y="566" text-anchor="middle" font-size="13" fill="#333">de una reserva</text>
+<rect x="1198" y="462" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="1288.0" y="485" text-anchor="middle" font-size="13" fill="#333">HU08 Administrar</text>
+<text x="1288.0" y="502" text-anchor="middle" font-size="13" fill="#333">servicios</text>
+<rect x="1198" y="526" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="1288.0" y="549" text-anchor="middle" font-size="13" fill="#333">HU09 Definir horario</text>
+<text x="1288.0" y="566" text-anchor="middle" font-size="13" fill="#333">semanal</text>
+<rect x="1198" y="590" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="1288.0" y="613" text-anchor="middle" font-size="13" fill="#333">HU10 Bloquear días</text>
+<text x="1288.0" y="630" text-anchor="middle" font-size="13" fill="#333">sin atención</text>
+<rect x="10" y="664" width="1582" height="276" fill="#e8f3f5"/>
+<line x1="10" y1="664" x2="1592" y2="664" stroke="#12355b" stroke-width="2" stroke-dasharray="8,5"/>
+<text x="20" y="694" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">Incremento 3</text>
+<text x="20" y="713" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">S8–S9</text>
+<rect x="1394" y="674" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="1484.0" y="697" text-anchor="middle" font-size="13" fill="#333">HU11 Registrar</text>
+<text x="1484.0" y="714" text-anchor="middle" font-size="13" fill="#333">materiales</text>
+<rect x="1394" y="738" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="1484.0" y="761" text-anchor="middle" font-size="13" fill="#333">HU12 Ajustar stock</text>
+<text x="1484.0" y="778" text-anchor="middle" font-size="13" fill="#333">con historial</text>
+<rect x="1394" y="802" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="1484.0" y="825" text-anchor="middle" font-size="13" fill="#333">HU13 Ver alertas de</text>
+<text x="1484.0" y="842" text-anchor="middle" font-size="13" fill="#333">stock y vencimiento</text>
+<rect x="1394" y="866" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="1484.0" y="889" text-anchor="middle" font-size="13" fill="#333">HU14 Buscar y filtrar</text>
+<text x="1484.0" y="906" text-anchor="middle" font-size="13" fill="#333">materiales</text>
+<rect x="10" y="940" width="1582" height="212" fill="#e8f3f5"/>
+<line x1="10" y1="940" x2="1592" y2="940" stroke="#12355b" stroke-width="2" stroke-dasharray="8,5"/>
+<text x="20" y="970" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">Incremento 4</text>
+<text x="20" y="989" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">S10–S11</text>
+<rect x="610" y="950" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="700.0" y="973" text-anchor="middle" font-size="13" fill="#333">HU15 Recibir correo</text>
+<text x="700.0" y="990" text-anchor="middle" font-size="13" fill="#333">de confirmación</text>
+<rect x="610" y="1014" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="700.0" y="1037" text-anchor="middle" font-size="13" fill="#333">HU16 Cancelar desde</text>
+<text x="700.0" y="1054" text-anchor="middle" font-size="13" fill="#333">enlace personal</text>
+<rect x="610" y="1078" width="180" height="54" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<text x="700.0" y="1101" text-anchor="middle" font-size="13" fill="#333">HU17 Recibir correo</text>
+<text x="700.0" y="1118" text-anchor="middle" font-size="13" fill="#333">de cancelación</text>
+<rect x="10" y="1152" width="1582" height="84" fill="#fbf1e4"/>
+<line x1="10" y1="1152" x2="1592" y2="1152" stroke="#12355b" stroke-width="2" stroke-dasharray="8,5"/>
+<text x="20" y="1182" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">Puesta en marcha</text>
+<text x="20" y="1201" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">S12</text>
+<rect x="414" y="1162" width="180" height="54" rx="6" fill="#fff" stroke="#d08a2c" stroke-width="2"/>
+<text x="504.0" y="1185" text-anchor="middle" font-size="13" fill="#333">HU18 Aceptar aviso</text>
+<text x="504.0" y="1202" text-anchor="middle" font-size="13" fill="#333">de privacidad</text>
+<rect x="1002" y="1162" width="180" height="54" rx="6" fill="#fff" stroke="#d08a2c" stroke-width="2"/>
+<text x="1092.0" y="1185" text-anchor="middle" font-size="13" fill="#333">HU19 Respaldo semanal</text>
+<text x="1092.0" y="1202" text-anchor="middle" font-size="13" fill="#333">de la información</text>
+<rect x="10" y="1236" width="1582" height="148" fill="#f3f3f3"/>
+<line x1="10" y1="1236" x2="1592" y2="1236" stroke="#12355b" stroke-width="2" stroke-dasharray="8,5"/>
+<text x="20" y="1266" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">Versión 1.1</text>
+<text x="20" y="1285" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">propuesta</text>
+<rect x="218" y="1246" width="180" height="54" rx="6" fill="#fff" stroke="#999" stroke-width="2"/>
+<text x="308.0" y="1269" text-anchor="middle" font-size="13" fill="#333">HU20 Página informativa</text>
+<text x="308.0" y="1286" text-anchor="middle" font-size="13" fill="#333">del doctor</text>
+<rect x="218" y="1310" width="180" height="54" rx="6" fill="#fff" stroke="#999" stroke-width="2"/>
+<text x="308.0" y="1333" text-anchor="middle" font-size="13" fill="#333">HU26 Mejorar el</text>
+<text x="308.0" y="1350" text-anchor="middle" font-size="13" fill="#333">diseño visual</text>
+<rect x="1002" y="1246" width="180" height="54" rx="6" fill="#fff" stroke="#999" stroke-width="2"/>
+<text x="1092.0" y="1269" text-anchor="middle" font-size="13" fill="#333">HU21 Aviso por correo</text>
+<text x="1092.0" y="1286" text-anchor="middle" font-size="13" fill="#333">de nueva reserva</text>
+<rect x="10" y="1384" width="1582" height="84" fill="#f3f3f3"/>
+<line x1="10" y1="1384" x2="1592" y2="1384" stroke="#12355b" stroke-width="2" stroke-dasharray="8,5"/>
+<text x="20" y="1414" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">Versión 2.0</text>
+<text x="20" y="1433" text-anchor="start" font-size="15" font-weight="bold" fill="#12355b">mejoras futuras</text>
+<rect x="610" y="1394" width="180" height="54" rx="6" fill="#fff" stroke="#999" stroke-width="2"/>
+<text x="700.0" y="1417" text-anchor="middle" font-size="13" fill="#333">HU22 Recordatorio</text>
+<text x="700.0" y="1434" text-anchor="middle" font-size="13" fill="#333">antes de la cita</text>
+<rect x="806" y="1394" width="180" height="54" rx="6" fill="#fff" stroke="#999" stroke-width="2"/>
+<text x="896.0" y="1417" text-anchor="middle" font-size="13" fill="#333">HU23 Perfiles para</text>
+<text x="896.0" y="1434" text-anchor="middle" font-size="13" fill="#333">el personal</text>
+<rect x="1002" y="1394" width="180" height="54" rx="6" fill="#fff" stroke="#999" stroke-width="2"/>
+<text x="1092.0" y="1417" text-anchor="middle" font-size="13" fill="#333">HU24 Agenda para varios</text>
+<text x="1092.0" y="1434" text-anchor="middle" font-size="13" fill="#333">odontólogos</text>
+<rect x="1394" y="1394" width="180" height="54" rx="6" fill="#fff" stroke="#999" stroke-width="2"/>
+<text x="1484.0" y="1417" text-anchor="middle" font-size="13" fill="#333">HU25 Descontar stock</text>
+<text x="1484.0" y="1434" text-anchor="middle" font-size="13" fill="#333">por procedimiento</text>
+<line x1="10" y1="1468" x2="1592" y2="1468" stroke="#12355b" stroke-width="2" stroke-dasharray="8,5"/>
+<text x="20" y="1503" text-anchor="start" font-size="14" fill="#333">Fondo celeste: implementado (versión 1.0).   Fondo anaranjado: pendiente para la puesta en marcha.   Fondo gris: mejoras propuestas, fuera del alcance de este proyecto.</text>
+</svg>

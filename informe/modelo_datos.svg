@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1010" viewBox="0 0 1600 1010" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1600" height="1010" fill="#fff"/>
+<text x="800.0" y="46" text-anchor="middle" font-size="30" font-weight="bold" fill="#12355b">Modelo de datos – PostgreSQL</text>
+<polyline points="470,153.0 500,153.0 500,179.0 585,179.0" fill="none" stroke="#333" stroke-width="2"/>
+<text x="482" y="145.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="573" y="171.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="1130,153.0 1100,153.0 1100,205.0 1015,205.0" fill="none" stroke="#333" stroke-width="2"/>
+<text x="1118" y="145.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="1027" y="197.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="470,473.0 500,473.0 500,499.0 585,499.0" fill="none" stroke="#333" stroke-width="2"/>
+<text x="482" y="465.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="573" y="491.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="1130,733.0 1100,733.0 1100,577.0 1015,577.0" fill="none" stroke="#333" stroke-width="2"/>
+<text x="1118" y="725.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="1027" y="569.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<polyline points="1345.0,798 1345.0,900 525,900 525,811.0 470,811.0" fill="none" stroke="#333" stroke-width="2"/>
+<text x="1359.0" y="818" text-anchor="middle" font-size="16" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">1</text>
+<text x="482" y="803.0" text-anchor="middle" font-size="16" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">N</text>
+<rect x="40" y="100" width="430" height="248" rx="8" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<path d="M40,140 v-32 a8,8 0 0 1 8,-8 h414 a8,8 0 0 1 8,8 v32 z" fill="#1b8a9a"/>
+<text x="255.0" y="126" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff" paint-order="stroke">pacientes</text>
+<text x="54" y="158" text-anchor="start" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">id</text>
+<text x="270" y="158" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">SERIAL</text>
+<text x="456" y="158" text-anchor="end" font-size="13" font-weight="bold" fill="#c0392b" stroke="#fff" stroke-width="4" paint-order="stroke">PK</text>
+<rect x="42" y="166" width="426" height="26" fill="#f4f7f9"/>
+<text x="54" y="184" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">rut</text>
+<text x="270" y="184" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<text x="456" y="184" text-anchor="end" font-size="13" font-weight="bold" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">UQ</text>
+<text x="54" y="210" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">nombre</text>
+<text x="270" y="210" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<rect x="42" y="218" width="426" height="26" fill="#f4f7f9"/>
+<text x="54" y="236" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">apellido_paterno</text>
+<text x="270" y="236" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<text x="54" y="262" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">apellido_materno</text>
+<text x="270" y="262" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<rect x="42" y="270" width="426" height="26" fill="#f4f7f9"/>
+<text x="54" y="288" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">telefono</text>
+<text x="270" y="288" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<text x="54" y="314" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">email</text>
+<text x="270" y="314" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<rect x="42" y="322" width="426" height="26" fill="#f4f7f9"/>
+<text x="54" y="340" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">creado_en</text>
+<text x="270" y="340" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TIMESTAMPTZ</text>
+<rect x="585" y="100" width="430" height="248" rx="8" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<path d="M585,140 v-32 a8,8 0 0 1 8,-8 h414 a8,8 0 0 1 8,8 v32 z" fill="#1b8a9a"/>
+<text x="800.0" y="126" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff" paint-order="stroke">reservas</text>
+<text x="599" y="158" text-anchor="start" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">id</text>
+<text x="815" y="158" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">SERIAL</text>
+<text x="1001" y="158" text-anchor="end" font-size="13" font-weight="bold" fill="#c0392b" stroke="#fff" stroke-width="4" paint-order="stroke">PK</text>
+<rect x="587" y="166" width="426" height="26" fill="#f4f7f9"/>
+<text x="599" y="184" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">paciente_id</text>
+<text x="815" y="184" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">INTEGER</text>
+<text x="1001" y="184" text-anchor="end" font-size="13" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">FK</text>
+<text x="599" y="210" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">servicio_id</text>
+<text x="815" y="210" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">INTEGER</text>
+<text x="1001" y="210" text-anchor="end" font-size="13" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">FK</text>
+<rect x="587" y="218" width="426" height="26" fill="#f4f7f9"/>
+<text x="599" y="236" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">fecha</text>
+<text x="815" y="236" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">DATE</text>
+<text x="1001" y="236" text-anchor="end" font-size="13" font-weight="bold" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">UQ*</text>
+<text x="599" y="262" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">hora</text>
+<text x="815" y="262" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TIME</text>
+<text x="1001" y="262" text-anchor="end" font-size="13" font-weight="bold" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">UQ*</text>
+<rect x="587" y="270" width="426" height="26" fill="#f4f7f9"/>
+<text x="599" y="288" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">estado</text>
+<text x="815" y="288" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<text x="599" y="314" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">token_cancelacion</text>
+<text x="815" y="314" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">UUID</text>
+<text x="1001" y="314" text-anchor="end" font-size="13" font-weight="bold" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">UQ</text>
+<rect x="587" y="322" width="426" height="26" fill="#f4f7f9"/>
+<text x="599" y="340" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">creado_en</text>
+<text x="815" y="340" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TIMESTAMPTZ</text>
+<rect x="1130" y="100" width="430" height="196" rx="8" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<path d="M1130,140 v-32 a8,8 0 0 1 8,-8 h414 a8,8 0 0 1 8,8 v32 z" fill="#1b8a9a"/>
+<text x="1345.0" y="126" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff" paint-order="stroke">servicios</text>
+<text x="1144" y="158" text-anchor="start" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">id</text>
+<text x="1360" y="158" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">SERIAL</text>
+<text x="1546" y="158" text-anchor="end" font-size="13" font-weight="bold" fill="#c0392b" stroke="#fff" stroke-width="4" paint-order="stroke">PK</text>
+<rect x="1132" y="166" width="426" height="26" fill="#f4f7f9"/>
+<text x="1144" y="184" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">codigo</text>
+<text x="1360" y="184" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<text x="1546" y="184" text-anchor="end" font-size="13" font-weight="bold" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">UQ</text>
+<text x="1144" y="210" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">nombre</text>
+<text x="1360" y="210" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<rect x="1132" y="218" width="426" height="26" fill="#f4f7f9"/>
+<text x="1144" y="236" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">duracion_min</text>
+<text x="1360" y="236" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">INTEGER</text>
+<text x="1144" y="262" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">precio</text>
+<text x="1360" y="262" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">INTEGER</text>
+<rect x="1132" y="270" width="426" height="26" fill="#f4f7f9"/>
+<text x="1144" y="288" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">activo</text>
+<text x="1360" y="288" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">BOOLEAN</text>
+<rect x="1130" y="330" width="430" height="170" rx="8" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<path d="M1130,370 v-32 a8,8 0 0 1 8,-8 h414 a8,8 0 0 1 8,8 v32 z" fill="#1b8a9a"/>
+<text x="1345.0" y="356" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff" paint-order="stroke">horario_semanal</text>
+<text x="1144" y="388" text-anchor="start" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">id</text>
+<text x="1360" y="388" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">SERIAL</text>
+<text x="1546" y="388" text-anchor="end" font-size="13" font-weight="bold" fill="#c0392b" stroke="#fff" stroke-width="4" paint-order="stroke">PK</text>
+<rect x="1132" y="396" width="426" height="26" fill="#f4f7f9"/>
+<text x="1144" y="414" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">dia_semana</text>
+<text x="1360" y="414" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">SMALLINT</text>
+<text x="1144" y="440" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">hora_inicio</text>
+<text x="1360" y="440" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TIME</text>
+<rect x="1132" y="448" width="426" height="26" fill="#f4f7f9"/>
+<text x="1144" y="466" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">hora_fin</text>
+<text x="1360" y="466" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TIME</text>
+<text x="1144" y="492" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">intervalo_min</text>
+<text x="1360" y="492" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">INTEGER</text>
+<rect x="1130" y="535" width="430" height="92" rx="8" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<path d="M1130,575 v-32 a8,8 0 0 1 8,-8 h414 a8,8 0 0 1 8,8 v32 z" fill="#1b8a9a"/>
+<text x="1345.0" y="561" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff" paint-order="stroke">dias_bloqueados</text>
+<text x="1144" y="593" text-anchor="start" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">fecha</text>
+<text x="1360" y="593" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">DATE</text>
+<text x="1546" y="593" text-anchor="end" font-size="13" font-weight="bold" fill="#c0392b" stroke="#fff" stroke-width="4" paint-order="stroke">PK</text>
+<rect x="1132" y="601" width="426" height="26" fill="#f4f7f9"/>
+<text x="1144" y="619" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">motivo</text>
+<text x="1360" y="619" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<rect x="40" y="420" width="430" height="404" rx="8" fill="#fff" stroke="#d08a2c" stroke-width="2"/>
+<path d="M40,460 v-32 a8,8 0 0 1 8,-8 h414 a8,8 0 0 1 8,8 v32 z" fill="#d08a2c"/>
+<text x="255.0" y="446" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff" paint-order="stroke">materials</text>
+<text x="54" y="478" text-anchor="start" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">id</text>
+<text x="270" y="478" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">SERIAL</text>
+<text x="456" y="478" text-anchor="end" font-size="13" font-weight="bold" fill="#c0392b" stroke="#fff" stroke-width="4" paint-order="stroke">PK</text>
+<rect x="42" y="486" width="426" height="26" fill="#f4f7f9"/>
+<text x="54" y="504" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">name</text>
+<text x="270" y="504" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<text x="54" y="530" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">category</text>
+<text x="270" y="530" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<rect x="42" y="538" width="426" height="26" fill="#f4f7f9"/>
+<text x="54" y="556" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">sku</text>
+<text x="270" y="556" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<text x="456" y="556" text-anchor="end" font-size="13" font-weight="bold" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">UQ</text>
+<text x="54" y="582" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">unit</text>
+<text x="270" y="582" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<rect x="42" y="590" width="426" height="26" fill="#f4f7f9"/>
+<text x="54" y="608" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">quantity_on_hand</text>
+<text x="270" y="608" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">INTEGER</text>
+<text x="54" y="634" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">minimum_threshold</text>
+<text x="270" y="634" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">INTEGER</text>
+<rect x="42" y="642" width="426" height="26" fill="#f4f7f9"/>
+<text x="54" y="660" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">expiry_date</text>
+<text x="270" y="660" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">DATE</text>
+<text x="54" y="686" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">supplier</text>
+<text x="270" y="686" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<rect x="42" y="694" width="426" height="26" fill="#f4f7f9"/>
+<text x="54" y="712" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">unit_cost</text>
+<text x="270" y="712" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">NUMERIC(10,2)</text>
+<text x="54" y="738" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">active</text>
+<text x="270" y="738" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">BOOLEAN</text>
+<rect x="42" y="746" width="426" height="26" fill="#f4f7f9"/>
+<text x="54" y="764" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">created_at</text>
+<text x="270" y="764" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TIMESTAMPTZ</text>
+<text x="54" y="790" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">updated_at</text>
+<text x="270" y="790" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TIMESTAMPTZ</text>
+<rect x="42" y="798" width="426" height="26" fill="#f4f7f9"/>
+<text x="54" y="816" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">updated_by</text>
+<text x="270" y="816" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">INTEGER</text>
+<text x="456" y="816" text-anchor="end" font-size="13" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">FK</text>
+<rect x="585" y="420" width="430" height="196" rx="8" fill="#fff" stroke="#d08a2c" stroke-width="2"/>
+<path d="M585,460 v-32 a8,8 0 0 1 8,-8 h414 a8,8 0 0 1 8,8 v32 z" fill="#d08a2c"/>
+<text x="800.0" y="446" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff" paint-order="stroke">stock_adjustments</text>
+<text x="599" y="478" text-anchor="start" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">id</text>
+<text x="815" y="478" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">SERIAL</text>
+<text x="1001" y="478" text-anchor="end" font-size="13" font-weight="bold" fill="#c0392b" stroke="#fff" stroke-width="4" paint-order="stroke">PK</text>
+<rect x="587" y="486" width="426" height="26" fill="#f4f7f9"/>
+<text x="599" y="504" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">material_id</text>
+<text x="815" y="504" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">INTEGER</text>
+<text x="1001" y="504" text-anchor="end" font-size="13" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">FK</text>
+<text x="599" y="530" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">delta</text>
+<text x="815" y="530" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">INTEGER</text>
+<rect x="587" y="538" width="426" height="26" fill="#f4f7f9"/>
+<text x="599" y="556" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">reason</text>
+<text x="815" y="556" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<text x="599" y="582" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">user_id</text>
+<text x="815" y="582" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">INTEGER</text>
+<text x="1001" y="582" text-anchor="end" font-size="13" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">FK</text>
+<rect x="587" y="590" width="426" height="26" fill="#f4f7f9"/>
+<text x="599" y="608" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">created_at</text>
+<text x="815" y="608" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TIMESTAMPTZ</text>
+<rect x="1130" y="680" width="430" height="118" rx="8" fill="#fff" stroke="#12355b" stroke-width="2"/>
+<path d="M1130,720 v-32 a8,8 0 0 1 8,-8 h414 a8,8 0 0 1 8,8 v32 z" fill="#12355b"/>
+<text x="1345.0" y="706" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff" paint-order="stroke">admin</text>
+<text x="1144" y="738" text-anchor="start" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">id</text>
+<text x="1360" y="738" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">SERIAL</text>
+<text x="1546" y="738" text-anchor="end" font-size="13" font-weight="bold" fill="#c0392b" stroke="#fff" stroke-width="4" paint-order="stroke">PK</text>
+<rect x="1132" y="746" width="426" height="26" fill="#f4f7f9"/>
+<text x="1144" y="764" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">email</text>
+<text x="1360" y="764" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<text x="1546" y="764" text-anchor="end" font-size="13" font-weight="bold" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">UQ</text>
+<text x="1144" y="790" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">password_hash</text>
+<text x="1360" y="790" text-anchor="start" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">TEXT</text>
+<text x="40" y="935" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">PK: clave primaria.  FK: clave foránea.  UQ: valor único.  UQ*: fecha + hora únicas entre las reservas no canceladas (índice reservas_bloque_unico).</text>
+<text x="40" y="960" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Celeste: agenda.  Anaranjado: inventario.  Azul oscuro: seguridad.  horario_semanal y dias_bloqueados son tablas de configuración, sin relaciones con otras tablas.</text>
+</svg>

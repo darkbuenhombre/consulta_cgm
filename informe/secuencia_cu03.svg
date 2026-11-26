@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1094" viewBox="0 0 1600 1094" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1600" height="1094" fill="#fff"/>
+<text x="800.0" y="46" text-anchor="middle" font-size="28" font-weight="bold" fill="#12355b">Diagrama de secuencia – CU03 – Cancelar reserva</text>
+<line x1="150.0" y1="170" x2="150.0" y2="1064" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<g stroke="#12355b" stroke-width="3" fill="none"><circle cx="150.0" cy="88" r="13"/><line x1="150.0" y1="101" x2="150.0" y2="135"/><line x1="128.0" y1="112" x2="172.0" y2="112"/><line x1="150.0" y1="135" x2="132.0" y2="158"/><line x1="150.0" y1="135" x2="168.0" y2="158"/></g>
+<text x="150.0" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b" stroke="#fff" stroke-width="5" paint-order="stroke">Paciente</text>
+<line x1="475.0" y1="170" x2="475.0" y2="1064" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="365.0" y="80" width="220" height="66" rx="8" fill="#12355b"/>
+<text x="475.0" y="108" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Interfaz web</text>
+<text x="475.0" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">(React)</text>
+<line x1="800.0" y1="170" x2="800.0" y2="1064" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="690.0" y="80" width="220" height="66" rx="8" fill="#12355b"/>
+<text x="800.0" y="108" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">API</text>
+<text x="800.0" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">(Express)</text>
+<line x1="1125.0" y1="170" x2="1125.0" y2="1064" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="1015.0" y="80" width="220" height="66" rx="8" fill="#12355b"/>
+<text x="1125.0" y="108" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Base de datos</text>
+<text x="1125.0" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">(PostgreSQL)</text>
+<line x1="1450.0" y1="170" x2="1450.0" y2="1064" stroke="#9aa7b3" stroke-width="1.5" stroke-dasharray="6,6"/>
+<rect x="1340.0" y="80" width="220" height="66" rx="8" fill="#12355b"/>
+<text x="1450.0" y="108" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">Gmail</text>
+<text x="1450.0" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">(SMTP)</text>
+<line x1="150.0" y1="220" x2="465.0" y2="220" stroke="#333" stroke-width="1.8"/>
+<polygon points="475.0,220 463.0,214 463.0,226" fill="#333"/>
+<text x="312.5" y="212" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Abre el enlace del correo</text>
+<line x1="475.0" y1="270" x2="790.0" y2="270" stroke="#333" stroke-width="1.8"/>
+<polygon points="800.0,270 788.0,264 788.0,276" fill="#333"/>
+<text x="637.5" y="262" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">GET /api/reservas/cancelar/:token</text>
+<line x1="800.0" y1="320" x2="1115.0" y2="320" stroke="#333" stroke-width="1.8"/>
+<polygon points="1125.0,320 1113.0,314 1113.0,326" fill="#333"/>
+<text x="962.5" y="312" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Buscar reserva por token</text>
+<line x1="1125.0" y1="370" x2="800.0" y2="370" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M812.0,364 L800.0,370 L812.0,376" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="962.5" y="362" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Reserva</text>
+<line x1="800.0" y1="454" x2="475.0" y2="454" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M487.0,448 L475.0,454 L487.0,460" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="637.5" y="446" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">404: reserva no encontrada</text>
+<line x1="800.0" y1="538" x2="475.0" y2="538" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M487.0,532 L475.0,538 L487.0,544" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="637.5" y="530" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Servicio, fecha, hora y si es cancelable</text>
+<line x1="150.0" y1="588" x2="465.0" y2="588" stroke="#333" stroke-width="1.8"/>
+<polygon points="475.0,588 463.0,582 463.0,594" fill="#333"/>
+<text x="312.5" y="580" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Confirma la cancelación</text>
+<line x1="475.0" y1="638" x2="790.0" y2="638" stroke="#333" stroke-width="1.8"/>
+<polygon points="800.0,638 788.0,632 788.0,644" fill="#333"/>
+<text x="637.5" y="630" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">POST /api/reservas/cancelar/:token</text>
+<line x1="800.0" y1="722" x2="475.0" y2="722" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M487.0,716 L475.0,722 L487.0,728" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="637.5" y="714" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">409: ya no se puede cancelar</text>
+<line x1="800.0" y1="806" x2="1115.0" y2="806" stroke="#333" stroke-width="1.8"/>
+<polygon points="1125.0,806 1113.0,800 1113.0,812" fill="#333"/>
+<text x="962.5" y="798" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">UPDATE estado = &#x27;cancelada&#x27;</text>
+<line x1="800.0" y1="856" x2="1440.0" y2="856" stroke="#333" stroke-width="1.8"/>
+<polygon points="1450.0,856 1438.0,850 1438.0,862" fill="#333"/>
+<text x="1125.0" y="848" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Enviar correo de cancelación</text>
+<line x1="800.0" y1="906" x2="475.0" y2="906" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M487.0,900 L475.0,906 L487.0,912" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="637.5" y="898" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Reserva cancelada</text>
+<line x1="475.0" y1="956" x2="150.0" y2="956" stroke="#333" stroke-width="1.5" stroke-dasharray="7,5"/>
+<path d="M162.0,950 L150.0,956 L162.0,962" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="312.5" y="948" text-anchor="middle" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Muestra la cancelación</text>
+<rect x="54" y="680" width="1492" height="326" fill="none" stroke="#1b8a9a" stroke-width="1.6"/>
+<path d="M54,680 h62 v20 l-10,10 h-52 z" fill="#e8f3f5" stroke="#1b8a9a" stroke-width="1.6"/>
+<text x="80" y="700" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">alt</text>
+<text x="130" y="700" text-anchor="start" font-size="14" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">[ya cancelada, completada o con hora pasada]</text>
+<line x1="54" y1="764" x2="1546" y2="764" stroke="#1b8a9a" stroke-width="1.4" stroke-dasharray="8,5"/>
+<text x="66" y="784" text-anchor="start" font-size="14" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">[pendiente o confirmada y futura]</text>
+<rect x="40" y="412" width="1520" height="608" fill="none" stroke="#1b8a9a" stroke-width="1.6"/>
+<path d="M40,412 h62 v20 l-10,10 h-52 z" fill="#e8f3f5" stroke="#1b8a9a" stroke-width="1.6"/>
+<text x="66" y="432" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">alt</text>
+<text x="116" y="432" text-anchor="start" font-size="14" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">[token inválido o inexistente]</text>
+<line x1="40" y1="496" x2="1560" y2="496" stroke="#1b8a9a" stroke-width="1.4" stroke-dasharray="8,5"/>
+<text x="52" y="516" text-anchor="start" font-size="14" font-weight="bold" fill="#1b8a9a" stroke="#fff" stroke-width="4" paint-order="stroke">[reserva encontrada]</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1600" height="760" fill="#fff"/>
+<defs><marker id="f" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#333" stroke-width="1.6"/></marker></defs>
+<text x="800.0" y="46" text-anchor="middle" font-size="28" font-weight="bold" fill="#12355b">Vista física – Despliegue propuesto</text>
+<polygon points="40,126 56,110 356,110 356,244 340,260" fill="#d8e2ea" stroke="#12355b" stroke-width="2"/>
+<rect x="40" y="126" width="300" height="134" fill="#f5fafb" stroke="#12355b" stroke-width="2"/>
+<text x="190.0" y="150" text-anchor="middle" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">«device»</text>
+<text x="190.0" y="172" text-anchor="middle" font-size="17" font-weight="bold" fill="#12355b" stroke="#fff" stroke-width="4" paint-order="stroke">Dispositivo del paciente</text>
+<rect x="70" y="190" width="240" height="58" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="190.0" y="214" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Navegador web</text>
+<text x="190.0" y="234" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">computador o celular</text>
+<polygon points="40,396 56,380 356,380 356,514 340,530" fill="#d8e2ea" stroke="#12355b" stroke-width="2"/>
+<rect x="40" y="396" width="300" height="134" fill="#f5fafb" stroke="#12355b" stroke-width="2"/>
+<text x="190.0" y="420" text-anchor="middle" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">«device»</text>
+<text x="190.0" y="442" text-anchor="middle" font-size="17" font-weight="bold" fill="#12355b" stroke="#fff" stroke-width="4" paint-order="stroke">Equipo del odontólogo</text>
+<rect x="70" y="460" width="240" height="58" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="190.0" y="484" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Navegador web</text>
+<text x="190.0" y="504" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">panel de administración</text>
+<polygon points="470,106 486,90 1046,90 1046,544 1030,560" fill="#d8e2ea" stroke="#12355b" stroke-width="2"/>
+<rect x="470" y="106" width="560" height="454" fill="#f5fafb" stroke="#12355b" stroke-width="2"/>
+<text x="750.0" y="130" text-anchor="middle" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">«execution environment: Linux»</text>
+<text x="750.0" y="152" text-anchor="middle" font-size="17" font-weight="bold" fill="#12355b" stroke="#fff" stroke-width="4" paint-order="stroke">Servidor de aplicación</text>
+<rect x="510" y="180" width="480" height="58" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="750.0" y="204" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Nginx</text>
+<text x="750.0" y="224" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">HTTPS (certificado TLS) · sirve el build de React · proxy /api</text>
+<rect x="510" y="275" width="480" height="58" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="750.0" y="299" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Build de React</text>
+<text x="750.0" y="319" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">archivos estáticos (npm run build)</text>
+<rect x="510" y="370" width="480" height="58" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="750.0" y="394" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">API Node.js 22 + Express</text>
+<text x="750.0" y="414" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">proceso en el puerto 4000 · variables en .env</text>
+<rect x="510" y="465" width="480" height="58" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="750.0" y="489" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Tarea programada (cron)</text>
+<text x="750.0" y="509" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">respaldo diario con pg_dump hacia el servidor de base de datos</text>
+<polygon points="1160,126 1176,110 1576,110 1576,354 1560,370" fill="#d8e2ea" stroke="#12355b" stroke-width="2"/>
+<rect x="1160" y="126" width="400" height="244" fill="#f5fafb" stroke="#12355b" stroke-width="2"/>
+<text x="1360.0" y="150" text-anchor="middle" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">«execution environment: Linux»</text>
+<text x="1360.0" y="172" text-anchor="middle" font-size="17" font-weight="bold" fill="#12355b" stroke="#fff" stroke-width="4" paint-order="stroke">Servidor de base de datos</text>
+<rect x="1200" y="200" width="320" height="58" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="1360.0" y="224" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">PostgreSQL</text>
+<text x="1360.0" y="244" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">base de datos consulta</text>
+<rect x="1200" y="290" width="320" height="58" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="1360.0" y="314" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Respaldos diarios</text>
+<text x="1360.0" y="334" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">copias fuera del servidor</text>
+<polygon points="1160,456 1176,440 1576,440 1576,574 1560,590" fill="#d8e2ea" stroke="#d08a2c" stroke-width="2"/>
+<rect x="1160" y="456" width="400" height="134" fill="#f5fafb" stroke="#d08a2c" stroke-width="2"/>
+<text x="1360.0" y="480" text-anchor="middle" font-size="13" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">«external system»</text>
+<text x="1360.0" y="502" text-anchor="middle" font-size="17" font-weight="bold" fill="#d08a2c" stroke="#fff" stroke-width="4" paint-order="stroke">Gmail</text>
+<rect x="1200" y="520" width="320" height="58" rx="6" fill="#fff" stroke="#d08a2c" stroke-width="1.8"/>
+<text x="1360.0" y="544" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Servidor SMTP</text>
+<text x="1360.0" y="564" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">smtp.gmail.com</text>
+<polyline points="340,230 510,210" fill="none" stroke="#12355b" stroke-width="2.5"/>
+<text x="425.0" y="210.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#12355b" stroke="#fff" stroke-width="4" paint-order="stroke">HTTPS 443</text>
+<polyline points="340,495 420,495 420,230 510,215" fill="none" stroke="#12355b" stroke-width="2.5"/>
+<text x="425.0" y="355.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#12355b" stroke="#fff" stroke-width="4" paint-order="stroke">HTTPS 443</text>
+<polyline points="990,388 1080,388 1080,230 1200,230" fill="none" stroke="#12355b" stroke-width="2.5"/>
+<text x="1080.0" y="309.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#12355b" stroke="#fff" stroke-width="4" paint-order="stroke">TCP 5432 (SSL)</text>
+<polyline points="990,412 1110,412 1110,550 1200,550" fill="none" stroke="#12355b" stroke-width="2.5"/>
+<text x="1105.0" y="501.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#12355b" stroke="#fff" stroke-width="4" paint-order="stroke">SMTP 587 (TLS)</text>
+<polyline points="510,222 492,222 492,304 510,304" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="6,5" marker-end="url(#f)"/>
+<polyline points="492,304 492,399 510,399" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="6,5" marker-end="url(#f)"/>
+<text x="40" y="640" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Despliegue propuesto para la puesta en marcha: el proveedor de hosting aún no está definido. Separa el servidor de aplicación del servidor de base de datos.</text>
+<text x="40" y="664" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Detrás de Nginx, la API debe activar app.set(&quot;trust proxy&quot;, 1) para que el límite de intentos identifique la IP real de cada usuario.</text>
+<text x="40" y="688" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">En el ambiente de desarrollo, todos los componentes se ejecutan en un solo equipo (React en el puerto 3000, API en el 4000 y PostgreSQL local).</text>
+</svg>

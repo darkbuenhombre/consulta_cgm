@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1600" height="900" fill="#fff"/>
+<defs><marker id="f" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#333" stroke-width="1.6"/></marker></defs>
+<text x="800.0" y="46" text-anchor="middle" font-size="28" font-weight="bold" fill="#12355b">Vista de desarrollo – Organización del código</text>
+<rect x="40" y="90" width="214.0" height="26" fill="#1b8a9a"/>
+<rect x="40" y="116" width="620" height="694" fill="#e8f3f5" stroke="#1b8a9a" stroke-width="2"/>
+<text x="50" y="109" font-size="15" font-weight="bold" fill="#fff">reservas/src (React)</text>
+<rect x="230" y="135" width="240" height="46" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="350.0" y="156" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">App.js</text>
+<text x="350.0" y="173" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">rutas de la aplicación</text>
+<rect x="60" y="210" width="71.5" height="26" fill="#1b8a9a"/>
+<rect x="60" y="236" width="580" height="124" fill="#e8f3f5" stroke="#1b8a9a" stroke-width="2"/>
+<text x="70" y="229" font-size="15" font-weight="bold" fill="#fff">pages</text>
+<rect x="75" y="250" width="175" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="162.5" y="271" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Reserva</text>
+<rect x="263" y="250" width="175" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="350.5" y="271" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Cancelar</text>
+<rect x="451" y="250" width="175" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="538.5" y="271" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">AdminLogin</text>
+<rect x="75" y="300" width="175" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="162.5" y="321" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">AdminPanel</text>
+<rect x="263" y="300" width="175" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="350.5" y="321" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">AdminInventario</text>
+<rect x="60" y="390" width="119.0" height="26" fill="#1b8a9a"/>
+<rect x="60" y="416" width="580" height="184" fill="#e8f3f5" stroke="#1b8a9a" stroke-width="2"/>
+<text x="70" y="409" font-size="15" font-weight="bold" fill="#fff">components</text>
+<rect x="75" y="430" width="175" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="162.5" y="451" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Header</text>
+<rect x="263" y="430" width="175" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="350.5" y="451" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">SelectorServicio</text>
+<rect x="451" y="430" width="175" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="538.5" y="451" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">SelectorFecha</text>
+<rect x="75" y="476" width="175" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="162.5" y="497" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">SelectorHora</text>
+<rect x="263" y="476" width="175" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="350.5" y="497" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">DatosPaciente</text>
+<rect x="75" y="520" width="71.5" height="26" fill="#1b8a9a"/>
+<rect x="75" y="546" width="550" height="44" fill="#e8f3f5" stroke="#1b8a9a" stroke-width="2"/>
+<text x="85" y="539" font-size="15" font-weight="bold" fill="#fff">admin</text>
+<rect x="82" y="552" width="130" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="147.0" y="573" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">AdminReservas</text>
+<rect x="218" y="552" width="130" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="283.0" y="573" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">AdminServicios</text>
+<rect x="354" y="552" width="130" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="419.0" y="573" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">AdminHorario</text>
+<rect x="490" y="552" width="130" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="555.0" y="573" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">FormMaterial</text>
+<rect x="75" y="640" width="270" height="46" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="210.0" y="661" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">estilos.js</text>
+<text x="210.0" y="678" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">estilos compartidos</text>
+<rect x="365" y="640" width="270" height="46" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="500.0" y="661" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">api.js</text>
+<text x="500.0" y="678" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">cliente HTTP y sesión</text>
+<rect x="60" y="715" width="90.5" height="26" fill="#1b8a9a"/>
+<rect x="60" y="741" width="580" height="54" fill="#e8f3f5" stroke="#1b8a9a" stroke-width="2"/>
+<text x="70" y="734" font-size="15" font-weight="bold" fill="#fff">pruebas</text>
+<rect x="75" y="752" width="550" height="32" rx="6" fill="#fff" stroke="#1b8a9a" stroke-width="1.8"/>
+<text x="350.0" y="773" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">App.test.js</text>
+<rect x="760" y="90" width="280.5" height="26" fill="#12355b"/>
+<rect x="760" y="116" width="800" height="694" fill="#e8f3f5" stroke="#12355b" stroke-width="2"/>
+<text x="770" y="109" font-size="15" font-weight="bold" fill="#fff">backend (Node.js + Express)</text>
+<rect x="790" y="135" width="220" height="46" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="900.0" y="156" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">index.js / app.js</text>
+<text x="900.0" y="173" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">arranque y rutas</text>
+<rect x="1030" y="135" width="240" height="46" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="1150.0" y="156" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">config.js</text>
+<text x="1150.0" y="173" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">variables de entorno</text>
+<rect x="1290" y="135" width="240" height="46" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="1410.0" y="156" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">db.js</text>
+<text x="1410.0" y="173" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">conexión y transacciones</text>
+<rect x="780" y="210" width="81.0" height="26" fill="#12355b"/>
+<rect x="780" y="236" width="370" height="124" fill="#e8f3f5" stroke="#12355b" stroke-width="2"/>
+<text x="790" y="229" font-size="15" font-weight="bold" fill="#fff">routes</text>
+<rect x="795" y="250" width="165" height="32" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="877.5" y="271" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">publico</text>
+<rect x="970" y="250" width="165" height="32" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="1052.5" y="271" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">auth</text>
+<rect x="795" y="300" width="165" height="32" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="877.5" y="321" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">admin</text>
+<rect x="970" y="300" width="165" height="32" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="1052.5" y="321" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">inventario</text>
+<rect x="1170" y="210" width="119.0" height="26" fill="#12355b"/>
+<rect x="1170" y="236" width="370" height="124" fill="#e8f3f5" stroke="#12355b" stroke-width="2"/>
+<text x="1180" y="229" font-size="15" font-weight="bold" fill="#fff">middleware</text>
+<rect x="1185" y="250" width="340" height="46" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="1355.0" y="271" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">auth</text>
+<text x="1355.0" y="288" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">verifica el token JWT</text>
+<rect x="1185" y="305" width="340" height="46" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="1355.0" y="326" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">limite</text>
+<text x="1355.0" y="343" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">intentos por IP</text>
+<rect x="780" y="390" width="370" height="46" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="965.0" y="411" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">validators.js</text>
+<text x="965.0" y="428" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">esquemas Zod</text>
+<rect x="780" y="450" width="100.0" height="26" fill="#12355b"/>
+<rect x="780" y="476" width="370" height="124" fill="#e8f3f5" stroke="#12355b" stroke-width="2"/>
+<text x="790" y="469" font-size="15" font-weight="bold" fill="#fff">services</text>
+<rect x="795" y="490" width="340" height="32" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="965.0" y="511" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">agenda</text>
+<rect x="795" y="524" width="340" height="32" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="965.0" y="545" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">inventario</text>
+<rect x="795" y="558" width="340" height="32" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="965.0" y="579" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">email</text>
+<rect x="1170" y="390" width="71.5" height="26" fill="#12355b"/>
+<rect x="1170" y="416" width="370" height="184" fill="#e8f3f5" stroke="#12355b" stroke-width="2"/>
+<text x="1180" y="409" font-size="15" font-weight="bold" fill="#fff">utils</text>
+<rect x="1185" y="430" width="340" height="46" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="1355.0" y="451" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">disponibilidad</text>
+<text x="1355.0" y="468" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">cálculo de bloques</text>
+<rect x="1185" y="484" width="340" height="46" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="1355.0" y="505" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">rut</text>
+<text x="1355.0" y="522" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">validación del RUT</text>
+<rect x="1185" y="538" width="340" height="46" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="1355.0" y="559" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">errores</text>
+<text x="1355.0" y="576" text-anchor="middle" font-size="12" fill="#667" stroke="#fff" stroke-width="4" paint-order="stroke">HttpError</text>
+<rect x="780" y="630" width="43.0" height="26" fill="#d08a2c"/>
+<rect x="780" y="656" width="370" height="139" fill="#e8f3f5" stroke="#d08a2c" stroke-width="2"/>
+<text x="790" y="649" font-size="15" font-weight="bold" fill="#fff">db</text>
+<rect x="795" y="670" width="165" height="32" rx="6" fill="#fff" stroke="#d08a2c" stroke-width="1.8"/>
+<text x="877.5" y="691" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">schema.sql</text>
+<rect x="970" y="670" width="165" height="32" rx="6" fill="#fff" stroke="#d08a2c" stroke-width="1.8"/>
+<text x="1052.5" y="691" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">seed.sql</text>
+<rect x="795" y="712" width="340" height="32" rx="6" fill="#fff" stroke="#d08a2c" stroke-width="1.8"/>
+<text x="965.0" y="733" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">migraciones/001, 002</text>
+<rect x="795" y="754" width="340" height="32" rx="6" fill="#fff" stroke="#d08a2c" stroke-width="1.8"/>
+<text x="965.0" y="775" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">scripts: init-db, migrar, crear-admin</text>
+<rect x="1170" y="630" width="62.0" height="26" fill="#12355b"/>
+<rect x="1170" y="656" width="370" height="139" fill="#e8f3f5" stroke="#12355b" stroke-width="2"/>
+<text x="1180" y="649" font-size="15" font-weight="bold" fill="#fff">test</text>
+<rect x="1185" y="668" width="340" height="32" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="1355.0" y="689" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">rut.test.js</text>
+<rect x="1185" y="708" width="340" height="32" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="1355.0" y="729" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">disponibilidad.test.js</text>
+<rect x="1185" y="748" width="340" height="32" rx="6" fill="#fff" stroke="#12355b" stroke-width="1.8"/>
+<text x="1355.0" y="769" text-anchor="middle" font-size="14" font-weight="bold" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">api.test.js</text>
+<polyline points="635,663 700,663 700,275 795,275" fill="none" stroke="#333" stroke-width="1.8" stroke-dasharray="7,5" marker-end="url(#f)"/>
+<text x="700.5" y="385.0" text-anchor="middle" font-size="13" font-weight="bold" fill="#12355b" stroke="#fff" stroke-width="4" paint-order="stroke">HTTP / JSON</text>
+<polyline points="965,360 965,390" fill="none" stroke="#333" stroke-width="1.8" stroke-dasharray="7,5" marker-end="url(#f)"/>
+<polyline points="1150,285 1170,285" fill="none" stroke="#333" stroke-width="1.8" stroke-dasharray="7,5" marker-end="url(#f)"/>
+<polyline points="1150,530 1170,530" fill="none" stroke="#333" stroke-width="1.8" stroke-dasharray="7,5" marker-end="url(#f)"/>
+<text x="40" y="850" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">Flechas punteadas: dependencia («usa»). Las páginas usan los componentes y api.js; api.js se comunica con las rutas del backend; las rutas usan middleware,</text>
+<text x="40" y="872" text-anchor="start" font-size="14" fill="#333" stroke="#fff" stroke-width="4" paint-order="stroke">validación y servicios; los servicios usan utils y db.js. Los paquetes db y test contienen los scripts de la base de datos y las pruebas automatizadas.</text>
+</svg>

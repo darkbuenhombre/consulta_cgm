@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1600" height="700" fill="#fff"/>
+<text x="800.0" y="46" text-anchor="middle" font-size="30" font-weight="bold" fill="#12355b">Product Roadmap – Consulta Dr. Cleomenes García</text>
+<line x1="40" y1="120" x2="1560" y2="120" stroke="#12355b" stroke-width="5"/>
+<polygon points="1560,108 1585,120 1560,132" fill="#12355b"/>
+<circle cx="184.0" cy="120" r="14" fill="#12355b" stroke="#fff" stroke-width="4"/>
+<text x="184.0" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">Semanas 1–3</text>
+<rect x="40" y="150" width="288" height="520" rx="14" fill="#fff" stroke="#12355b" stroke-width="2"/>
+<rect x="40" y="150" width="288" height="80" rx="14" fill="#12355b"/>
+<rect x="40" y="210" width="288" height="20" fill="#12355b"/>
+<text x="184.0" y="184" text-anchor="middle" font-size="22" font-weight="bold" fill="#fff">Fundamentos</text>
+<text x="184.0" y="213" text-anchor="middle" font-size="15" fill="#fff">Completada</text>
+<text x="184.0" y="262" text-anchor="middle" font-size="13" font-weight="bold" fill="#12355b">OBJETIVO</text>
+<text x="184.0" y="288" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b">Definir el problema</text>
+<text x="184.0" y="309" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b">y diseñar la solución</text>
+<line x1="60" y1="335" x2="308" y2="335" stroke="#ddd"/>
+<text x="184.0" y="362" text-anchor="middle" font-size="13" font-weight="bold" fill="#12355b">ENTREGABLES</text>
+<text x="184.0" y="392" text-anchor="middle" font-size="15" fill="#333">Problema, objetivos y</text>
+<text x="184.0" y="412" text-anchor="middle" font-size="15" fill="#333">requerimientos</text>
+<text x="184.0" y="432" text-anchor="middle" font-size="15" fill="#333">Arquitectura y modelo</text>
+<text x="184.0" y="452" text-anchor="middle" font-size="15" fill="#333">de datos (PostgreSQL)</text>
+<text x="184.0" y="472" text-anchor="middle" font-size="15" fill="#333">Entorno de desarrollo</text>
+<line x1="60" y1="560" x2="308" y2="560" stroke="#ddd"/>
+<text x="184.0" y="587" text-anchor="middle" font-size="13" font-weight="bold" fill="#12355b">MÉTRICA DE ÉXITO</text>
+<text x="184.0" y="615" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">Diseño aprobado</text>
+<text x="184.0" y="635" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">para construir</text>
+<circle cx="488.0" cy="120" r="14" fill="#1b8a9a" stroke="#fff" stroke-width="4"/>
+<text x="488.0" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b8a9a">Semanas 4–11</text>
+<rect x="344" y="150" width="288" height="520" rx="14" fill="#fff" stroke="#1b8a9a" stroke-width="2"/>
+<rect x="344" y="150" width="288" height="80" rx="14" fill="#1b8a9a"/>
+<rect x="344" y="210" width="288" height="20" fill="#1b8a9a"/>
+<text x="488.0" y="184" text-anchor="middle" font-size="22" font-weight="bold" fill="#fff">Versión 1.0</text>
+<text x="488.0" y="213" text-anchor="middle" font-size="15" fill="#fff">Completada</text>
+<text x="488.0" y="262" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b8a9a">OBJETIVO</text>
+<text x="488.0" y="288" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b">Reserva en línea y</text>
+<text x="488.0" y="309" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b">gestión interna digital</text>
+<line x1="364" y1="335" x2="612" y2="335" stroke="#ddd"/>
+<text x="488.0" y="362" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b8a9a">ENTREGABLES</text>
+<text x="488.0" y="392" text-anchor="middle" font-size="15" fill="#333">Inc. 1: sitio público</text>
+<text x="488.0" y="412" text-anchor="middle" font-size="15" fill="#333">y reservas (OE1, OE2)</text>
+<text x="488.0" y="432" text-anchor="middle" font-size="15" fill="#333">Inc. 2: panel de</text>
+<text x="488.0" y="452" text-anchor="middle" font-size="15" fill="#333">administración (OE5)</text>
+<text x="488.0" y="472" text-anchor="middle" font-size="15" fill="#333">Inc. 3: inventario (OE3)</text>
+<text x="488.0" y="492" text-anchor="middle" font-size="15" fill="#333">Inc. 4: notificaciones</text>
+<text x="488.0" y="512" text-anchor="middle" font-size="15" fill="#333">por correo (OE4)</text>
+<line x1="364" y1="560" x2="612" y2="560" stroke="#ddd"/>
+<text x="488.0" y="587" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b8a9a">MÉTRICA DE ÉXITO</text>
+<text x="488.0" y="615" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">31 de 31 pruebas</text>
+<text x="488.0" y="635" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">automatizadas aprobadas</text>
+<circle cx="792.0" cy="120" r="14" fill="#d08a2c" stroke="#fff" stroke-width="4"/>
+<text x="792.0" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="#d08a2c">Semanas 12–16</text>
+<rect x="648" y="150" width="288" height="520" rx="14" fill="#fff" stroke="#d08a2c" stroke-width="2"/>
+<rect x="648" y="150" width="288" height="80" rx="14" fill="#d08a2c"/>
+<rect x="648" y="210" width="288" height="20" fill="#d08a2c"/>
+<text x="792.0" y="184" text-anchor="middle" font-size="22" font-weight="bold" fill="#fff">Puesta en marcha</text>
+<text x="792.0" y="213" text-anchor="middle" font-size="15" fill="#fff">Pendiente</text>
+<text x="792.0" y="262" text-anchor="middle" font-size="13" font-weight="bold" fill="#d08a2c">OBJETIVO</text>
+<text x="792.0" y="288" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b">Sistema en uso real</text>
+<text x="792.0" y="309" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b">en la consulta</text>
+<line x1="668" y1="335" x2="916" y2="335" stroke="#ddd"/>
+<text x="792.0" y="362" text-anchor="middle" font-size="13" font-weight="bold" fill="#d08a2c">ENTREGABLES</text>
+<text x="792.0" y="392" text-anchor="middle" font-size="15" fill="#333">Aviso de privacidad</text>
+<text x="792.0" y="412" text-anchor="middle" font-size="15" fill="#333">(Ley 21.719)</text>
+<text x="792.0" y="432" text-anchor="middle" font-size="15" fill="#333">Respaldo semanal de datos</text>
+<text x="792.0" y="452" text-anchor="middle" font-size="15" fill="#333">Publicación con HTTPS</text>
+<text x="792.0" y="472" text-anchor="middle" font-size="15" fill="#333">Capacitación del</text>
+<text x="792.0" y="492" text-anchor="middle" font-size="15" fill="#333">personal</text>
+<line x1="668" y1="560" x2="916" y2="560" stroke="#ddd"/>
+<text x="792.0" y="587" text-anchor="middle" font-size="13" font-weight="bold" fill="#d08a2c">MÉTRICA DE ÉXITO</text>
+<text x="792.0" y="615" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">Métricas de los OE</text>
+<text x="792.0" y="635" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">medidas en el 1.er mes</text>
+<circle cx="1096.0" cy="120" r="14" fill="#6b7a8f" stroke="#fff" stroke-width="4"/>
+<text x="1096.0" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="#6b7a8f">Después del 1.er mes</text>
+<rect x="952" y="150" width="288" height="520" rx="14" fill="#fff" stroke="#6b7a8f" stroke-width="2"/>
+<rect x="952" y="150" width="288" height="80" rx="14" fill="#6b7a8f"/>
+<rect x="952" y="210" width="288" height="20" fill="#6b7a8f"/>
+<text x="1096.0" y="184" text-anchor="middle" font-size="22" font-weight="bold" fill="#fff">Versión 1.1</text>
+<text x="1096.0" y="213" text-anchor="middle" font-size="15" fill="#fff">Propuesta</text>
+<text x="1096.0" y="262" text-anchor="middle" font-size="13" font-weight="bold" fill="#6b7a8f">OBJETIVO</text>
+<text x="1096.0" y="288" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b">Mejorar la captación</text>
+<text x="1096.0" y="309" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b">de pacientes</text>
+<line x1="972" y1="335" x2="1220" y2="335" stroke="#ddd"/>
+<text x="1096.0" y="362" text-anchor="middle" font-size="13" font-weight="bold" fill="#6b7a8f">ENTREGABLES</text>
+<text x="1096.0" y="392" text-anchor="middle" font-size="15" fill="#333">Página informativa</text>
+<text x="1096.0" y="412" text-anchor="middle" font-size="15" fill="#333">del doctor</text>
+<text x="1096.0" y="432" text-anchor="middle" font-size="15" fill="#333">Mejora del diseño visual</text>
+<text x="1096.0" y="452" text-anchor="middle" font-size="15" fill="#333">Precios en el formulario</text>
+<text x="1096.0" y="472" text-anchor="middle" font-size="15" fill="#333">Aviso al odontólogo</text>
+<text x="1096.0" y="492" text-anchor="middle" font-size="15" fill="#333">de nuevas reservas</text>
+<line x1="972" y1="560" x2="1220" y2="560" stroke="#ddd"/>
+<text x="1096.0" y="587" text-anchor="middle" font-size="13" font-weight="bold" fill="#6b7a8f">MÉTRICA DE ÉXITO</text>
+<text x="1096.0" y="615" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">Más pacientes nuevos</text>
+<text x="1096.0" y="635" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">captados por la web</text>
+<circle cx="1400.0" cy="120" r="14" fill="#999999" stroke="#fff" stroke-width="4"/>
+<text x="1400.0" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="#999999">Futuro</text>
+<rect x="1256" y="150" width="288" height="520" rx="14" fill="#fff" stroke="#999999" stroke-width="2"/>
+<rect x="1256" y="150" width="288" height="80" rx="14" fill="#999999"/>
+<rect x="1256" y="210" width="288" height="20" fill="#999999"/>
+<text x="1400.0" y="184" text-anchor="middle" font-size="22" font-weight="bold" fill="#fff">Versión 2.0</text>
+<text x="1400.0" y="213" text-anchor="middle" font-size="15" fill="#fff">Fuera de alcance</text>
+<text x="1400.0" y="262" text-anchor="middle" font-size="13" font-weight="bold" fill="#999999">OBJETIVO</text>
+<text x="1400.0" y="288" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b">Escalar la gestión</text>
+<text x="1400.0" y="309" text-anchor="middle" font-size="16" font-weight="bold" fill="#12355b">de la consulta</text>
+<line x1="1276" y1="335" x2="1524" y2="335" stroke="#ddd"/>
+<text x="1400.0" y="362" text-anchor="middle" font-size="13" font-weight="bold" fill="#999999">ENTREGABLES</text>
+<text x="1400.0" y="392" text-anchor="middle" font-size="15" fill="#333">Versión para celular</text>
+<text x="1400.0" y="412" text-anchor="middle" font-size="15" fill="#333">Recordatorios previos</text>
+<text x="1400.0" y="432" text-anchor="middle" font-size="15" fill="#333">a la cita</text>
+<text x="1400.0" y="452" text-anchor="middle" font-size="15" fill="#333">Varios odontólogos</text>
+<text x="1400.0" y="472" text-anchor="middle" font-size="15" fill="#333">y perfiles de personal</text>
+<text x="1400.0" y="492" text-anchor="middle" font-size="15" fill="#333">Descuento de insumos</text>
+<text x="1400.0" y="512" text-anchor="middle" font-size="15" fill="#333">por procedimiento</text>
+<line x1="1276" y1="560" x2="1524" y2="560" stroke="#ddd"/>
+<text x="1400.0" y="587" text-anchor="middle" font-size="13" font-weight="bold" fill="#999999">MÉTRICA DE ÉXITO</text>
+<text x="1400.0" y="615" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">Menos inasistencias</text>
+<text x="1400.0" y="635" text-anchor="middle" font-size="15" font-weight="bold" fill="#12355b">y menos tareas manuales</text>
+</svg>

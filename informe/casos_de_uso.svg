@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" font-family="DejaVu Sans, Arial, sans-serif">
+<rect width="1600" height="1000" fill="#fff"/>
+<defs><marker id="f" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#333" stroke-width="1.5"/></marker></defs>
+<text x="800.0" y="46" text-anchor="middle" font-size="30" font-weight="bold" fill="#12355b">Diagrama de casos de uso – Sistema de reservas e inventario</text>
+<rect x="300" y="80" width="1000" height="890" rx="18" fill="#f5fafb" stroke="#12355b" stroke-width="2"/>
+<text x="800" y="114" text-anchor="middle" font-size="19" font-weight="bold" fill="#12355b">Sistema web – Consulta Dr. Cleomenes García</text>
+<ellipse cx="520" cy="200" rx="150" ry="44" fill="#fff" stroke="#1b8a9a" stroke-width="2.5"/>
+<text x="520" y="188.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">CU01</text>
+<text x="520" y="207.0" text-anchor="middle" font-size="15" fill="#333">Consultar servicios</text>
+<ellipse cx="520" cy="360" rx="150" ry="44" fill="#fff" stroke="#1b8a9a" stroke-width="2.5"/>
+<text x="520" y="348.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">CU02</text>
+<text x="520" y="367.0" text-anchor="middle" font-size="15" fill="#333">Reservar hora</text>
+<ellipse cx="460" cy="560" rx="150" ry="44" fill="#fff" stroke="#1b8a9a" stroke-width="2.5"/>
+<text x="460" y="548.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">CU03</text>
+<text x="460" y="567.0" text-anchor="middle" font-size="15" fill="#333">Cancelar reserva</text>
+<ellipse cx="1080" cy="175" rx="150" ry="44" fill="#fff" stroke="#1b8a9a" stroke-width="2.5"/>
+<text x="1080" y="163.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">CU04</text>
+<text x="1080" y="182.0" text-anchor="middle" font-size="15" fill="#333">Iniciar sesión</text>
+<ellipse cx="1080" cy="295" rx="150" ry="44" fill="#fff" stroke="#1b8a9a" stroke-width="2.5"/>
+<text x="1080" y="283.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">CU05</text>
+<text x="1080" y="302.0" text-anchor="middle" font-size="15" fill="#333">Gestionar reservas</text>
+<ellipse cx="1080" cy="415" rx="150" ry="44" fill="#fff" stroke="#1b8a9a" stroke-width="2.5"/>
+<text x="1080" y="403.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">CU06</text>
+<text x="1080" y="422.0" text-anchor="middle" font-size="15" fill="#333">Gestionar servicios</text>
+<ellipse cx="1080" cy="535" rx="150" ry="44" fill="#fff" stroke="#1b8a9a" stroke-width="2.5"/>
+<text x="1080" y="513.5" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">CU07</text>
+<text x="1080" y="532.5" text-anchor="middle" font-size="15" fill="#333">Configurar horario</text>
+<text x="1080" y="551.5" text-anchor="middle" font-size="15" fill="#333">y días bloqueados</text>
+<ellipse cx="1080" cy="655" rx="150" ry="44" fill="#fff" stroke="#1b8a9a" stroke-width="2.5"/>
+<text x="1080" y="643.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">CU08</text>
+<text x="1080" y="662.0" text-anchor="middle" font-size="15" fill="#333">Gestionar inventario</text>
+<ellipse cx="1080" cy="775" rx="150" ry="44" fill="#fff" stroke="#1b8a9a" stroke-width="2.5"/>
+<text x="1080" y="753.5" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">CU09</text>
+<text x="1080" y="772.5" text-anchor="middle" font-size="15" fill="#333">Consultar alertas</text>
+<text x="1080" y="791.5" text-anchor="middle" font-size="15" fill="#333">de inventario</text>
+<ellipse cx="820" cy="870" rx="150" ry="44" fill="#fff" stroke="#12355b" stroke-width="2.5"/>
+<text x="820" y="848.5" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">CU10</text>
+<text x="820" y="867.5" text-anchor="middle" font-size="15" fill="#333">Enviar notificación</text>
+<text x="820" y="886.5" text-anchor="middle" font-size="15" fill="#333">por correo</text>
+<g stroke="#12355b" stroke-width="3" fill="none"><circle cx="130" cy="305" r="16"/><line x1="130" y1="321" x2="130" y2="365"/><line x1="102" y1="335" x2="158" y2="335"/><line x1="130" y1="365" x2="108" y2="400"/><line x1="130" y1="365" x2="152" y2="400"/></g>
+<text x="130" y="428" text-anchor="middle" font-size="18" font-weight="bold" fill="#12355b">Paciente</text>
+<line x1="165" y1="330" x2="370" y2="200" stroke="#333" stroke-width="1.8"/>
+<line x1="165" y1="330" x2="370" y2="360" stroke="#333" stroke-width="1.8"/>
+<line x1="165" y1="330" x2="310" y2="560" stroke="#333" stroke-width="1.8"/>
+<g stroke="#12355b" stroke-width="3" fill="none"><circle cx="1460" cy="415" r="16"/><line x1="1460" y1="431" x2="1460" y2="475"/><line x1="1432" y1="445" x2="1488" y2="445"/><line x1="1460" y1="475" x2="1438" y2="510"/><line x1="1460" y1="475" x2="1482" y2="510"/></g>
+<text x="1460" y="538" text-anchor="middle" font-size="18" font-weight="bold" fill="#12355b">Odontólogo</text>
+<line x1="1425" y1="440" x2="1230" y2="175" stroke="#333" stroke-width="1.8"/>
+<line x1="1425" y1="440" x2="1230" y2="295" stroke="#333" stroke-width="1.8"/>
+<line x1="1425" y1="440" x2="1230" y2="415" stroke="#333" stroke-width="1.8"/>
+<line x1="1425" y1="440" x2="1230" y2="535" stroke="#333" stroke-width="1.8"/>
+<line x1="1425" y1="440" x2="1230" y2="655" stroke="#333" stroke-width="1.8"/>
+<line x1="1425" y1="440" x2="1230" y2="775" stroke="#333" stroke-width="1.8"/>
+<g stroke="#12355b" stroke-width="3" fill="none"><circle cx="130" cy="775" r="16"/><line x1="130" y1="791" x2="130" y2="835"/><line x1="102" y1="805" x2="158" y2="805"/><line x1="130" y1="835" x2="108" y2="870"/><line x1="130" y1="835" x2="152" y2="870"/></g>
+<text x="130" y="898" text-anchor="middle" font-size="18" font-weight="bold" fill="#12355b">Servicio de</text>
+<text x="130" y="919" text-anchor="middle" font-size="18" font-weight="bold" fill="#12355b">correo (Gmail)</text>
+<line x1="165" y1="800" x2="670" y2="870" stroke="#333" stroke-width="1.8"/>
+<line x1="545.5054488146468" y1="403.35926298489966" x2="794.4945511853532" y2="826.6407370151004" stroke="#333" stroke-width="1.8" stroke-dasharray="7,5" marker-end="url(#f)"/>
+<text x="710.0" y="615.0" text-anchor="middle" font-size="14" fill="#333">«include»</text>
+<line x1="508.3675148060988" y1="601.6498044163628" x2="771.6324851939012" y2="828.3501955836372" stroke="#333" stroke-width="1.8" stroke-dasharray="7,5" marker-end="url(#f)"/>
+<text x="610.0" y="735.0" text-anchor="middle" font-size="14" fill="#333">«include»</text>
+<polyline points="790,829 790,295 930,295" fill="none" stroke="#333" stroke-width="1.8" stroke-dasharray="7,5" marker-end="url(#f)"/>
+<text x="800" y="600" font-size="14" fill="#333">«extend»</text>
+<line x1="520.0" y1="316.0" x2="520.0" y2="244.0" stroke="#333" stroke-width="1.8" stroke-dasharray="7,5" marker-end="url(#f)"/>
+<text x="570.0" y="272.0" text-anchor="middle" font-size="14" fill="#333">«include»</text>
+<text x="320" y="955" font-size="14" fill="#333">CU05 a CU09 requieren sesión iniciada (CU04). CU10 extiende CU05 solo cuando el odontólogo cancela una reserva.</text>
+</svg>
